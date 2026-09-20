@@ -46,7 +46,7 @@ h2{font-size:clamp(44px,5.05vw,88px);margin-bottom:clamp(38px,5.1vw,86px);letter
 .header{background:#e8f1ff;position:relative;z-index:5;border-radius:0 0 0 70px;box-shadow:0 1px 0 rgba(7,11,36,.04)}
 .header__inner{display:flex;align-items:center;gap:clamp(26px,3vw,52px);min-height:118px}
 .brand{display:inline-flex;align-items:center;justify-content:center;flex:none}
-.brand img{width:88px;height:auto;object-fit:contain;filter:drop-shadow(0 8px 14px rgba(7,11,36,.12))}
+.brand img{display:block;width:104px;height:84px;object-fit:contain;object-position:center;filter:drop-shadow(0 8px 14px rgba(7,11,36,.12))}
 .navigation{display:flex;align-items:center;gap:clamp(24px,2.4vw,44px);font-size:clamp(17px,1.15vw,22px);flex:1;white-space:nowrap}
 .navigation a:hover,.footer a:hover{color:var(--blue)}
 .header__contacts{display:flex;align-items:center;gap:22px;font-size:clamp(16px,1vw,20px);white-space:nowrap}
@@ -105,10 +105,11 @@ h1{font-size:clamp(52px,6.05vw,112px);max-width:1460px;letter-spacing:-.025em}
 .product__link:hover{text-decoration:underline}
 .product__link span{font-size:25px}
 
-.benefits__grid{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:24px}
+.benefits__grid{display:grid;grid-template-columns:1.25fr 1fr 1fr;grid-template-areas:"tall assortment price" "tall delivery quality" "wide wide flex";gap:24px}
 .benefit{background:#eaf2ff;border-radius:30px;padding:34px;min-height:270px;display:flex;flex-direction:column;justify-content:space-between;gap:36px;box-shadow:inset 0 0 0 1px rgba(7,11,36,.025)}
-.benefit--tall{grid-row:span 2;min-height:564px}
-.benefit--wide{grid-column:span 2;justify-content:center}
+.benefit--tall{grid-area:tall;min-height:564px}
+.benefit--wide{grid-area:wide;justify-content:center}
+.benefit:nth-child(2){grid-area:assortment}.benefit:nth-child(3){grid-area:price}.benefit:nth-child(4){grid-area:delivery}.benefit:nth-child(5){grid-area:quality}.benefit:nth-child(7){grid-area:flex}
 .benefit__icon{width:76px;height:76px;display:grid;place-items:center;position:relative}
 .benefit__icon img{width:92px;height:92px;object-fit:contain;max-width:none}
 .benefit h3{color:var(--blue);font-size:clamp(28px,2.2vw,42px);max-width:430px}
@@ -132,7 +133,7 @@ h1{font-size:clamp(52px,6.05vw,112px);max-width:1460px;letter-spacing:-.025em}
 
 .footer{padding-block:54px 38px}
 .footer__intro{display:grid;grid-template-columns:110px 1fr;gap:44px;align-items:center;max-width:1450px}
-.brand--footer img{width:108px}
+.brand--footer img{width:120px;height:96px}
 .footer__intro p{font-size:clamp(17px,1.35vw,26px);line-height:1.38}
 .footer__grid{display:grid;grid-template-columns:1fr 1.2fr 1.25fr;gap:55px;padding-block:56px 76px;border-top:1px solid rgba(7,11,36,.16);margin-top:54px}
 .footer__grid>div{display:flex;flex-direction:column;align-items:flex-start;gap:13px;min-width:0}
@@ -145,15 +146,15 @@ h1{font-size:clamp(52px,6.05vw,112px);max-width:1460px;letter-spacing:-.025em}
   .header__contacts{display:none}
   .products__grid{grid-template-columns:repeat(4,minmax(300px,1fr))}
   .process__visual{min-height:520px}
-  .benefits__grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .benefit--tall,.benefit--wide{grid-row:auto;grid-column:auto;min-height:270px}
+  .benefits__grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-areas:"tall assortment" "tall price" "delivery quality" "wide wide" "flex flex"}
+  .benefit--tall{min-height:564px}
 }
 
 @media(max-width:900px){
   .container{width:calc(100% - 40px)}
   .header{border-radius:0 0 0 40px}
   .header__inner{min-height:82px;gap:14px;flex-wrap:wrap}
-  .brand img{width:68px}
+  .brand img{width:74px;height:62px}
   .menu-toggle{display:block;margin-left:auto;order:3}
   .header__cta{font-size:16px;min-height:46px;padding:10px 15px;margin-left:auto}
   .navigation{display:none;order:4;flex-basis:100%;padding:0 0 22px;align-items:stretch;gap:4px;font-size:18px;white-space:normal}
@@ -178,12 +179,15 @@ h1{font-size:clamp(52px,6.05vw,112px);max-width:1460px;letter-spacing:-.025em}
   .steps p{font-size:17px}
   .products__grid{grid-template-columns:repeat(4,minmax(280px,1fr))}
   .product{min-height:520px}
-  .benefits__grid{grid-template-columns:1fr;gap:14px}
+  .benefits__grid{grid-template-columns:1fr;grid-template-areas:none;gap:14px}
+  .benefit--tall{min-height:210px}
+  .benefit--wide{grid-area:auto}
+  .benefit:nth-child(n){grid-area:auto}
   .benefit{min-height:210px;padding:26px}
   .request__contacts{margin-top:34px;font-size:25px}
   .request-form{max-width:650px;width:100%;margin-inline:auto}
   .footer__intro{grid-template-columns:80px 1fr;gap:25px}
-  .brand--footer img{width:80px}
+  .brand--footer img{width:88px;height:72px}
   .footer__grid{gap:32px;grid-template-columns:1fr 1fr;padding-block:48px}
   .footer__grid>div:last-child{grid-column:1/-1}
 }
@@ -192,7 +196,7 @@ h1{font-size:clamp(52px,6.05vw,112px);max-width:1460px;letter-spacing:-.025em}
   .section{margin-top:78px}
   .header__cta{display:none}
   .header__inner{min-height:72px}
-  .brand img{width:58px}
+  .brand img{width:62px;height:52px}
   .hero__image{height:166px}
   .hero__content{padding-block:32px 40px}
   h1{font-size:35px}
