@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 112" role="img" aria-labelledby="title">
+  <title>Велес Сталь</title>
+  <path d="M48 6 83 18v32c0 24-14 43-35 56C27 93 13 74 13 50V18L48 6Z" fill="#fff" stroke="#111038" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M30 30 18 20l6 26m42-16 12-10-6 26" fill="none" stroke="#111038" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M28 42c2-12 11-20 20-20s18 8 20 20c4 3 7 9 7 16 0 18-14 31-27 31S21 76 21 58c0-7 3-13 7-16Z" fill="#111038"/>
+  <path d="M33 39c6-6 11-8 15-8s9 2 15 8l-8 4c-3-2-5-3-7-3s-4 1-7 3l-8-4Z" fill="#fff"/>
+  <path d="M35 53h9m8 0h9" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+  <path d="M48 57 39 69l9 9 9-9-9-12Z" fill="#fff"/>
+  <path d="M48 63v15m-7-9h14" stroke="#0b63f6" stroke-width="3" stroke-linecap="round"/>
+  <path d="M29 70c7 9 13 14 19 14s12-5 19-14" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+</svg>

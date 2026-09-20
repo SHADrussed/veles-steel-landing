@@ -1,0 +1,4 @@
+figma-export/
+*.fig
+.DS_Store
+Thumbs.db
