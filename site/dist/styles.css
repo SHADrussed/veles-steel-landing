@@ -99,7 +99,7 @@ textarea:focus-visible {
   margin-inline: auto;
 }
 .section {
-  margin-top: clamp(120px, 12vw, 220px);
+  margin-top: clamp(72px, 7vw, 120px);
 }
 h2 {
   font-family: "Involve", Manrope, sans-serif;
@@ -262,7 +262,6 @@ h2 {
 .hero__surface {
   border-radius: 0 0 0 clamp(56px, 6vw, 96px);
   overflow: hidden;
-  min-height: 900px;
 }
 .hero__content {
   padding-block: clamp(54px, 4.8vw, 92px);
@@ -333,7 +332,6 @@ h1 {
   line-height: 1.2;
 }
 .about {
-  min-height: 1250px;
 }
 .about__copy h3 {
   font-size: clamp(24px, 1.8vw, 32px);
@@ -351,7 +349,6 @@ h1 {
   border-radius: clamp(58px, 7vw, 126px) clamp(58px, 7vw, 126px) 0 0;
   padding-block: clamp(76px, 8vw, 150px);
   overflow: hidden;
-  min-height: 1380px;
 }
 .process__grid {
   display: grid;
@@ -431,7 +428,7 @@ h1 {
   background: #eaf2ff;
   border-radius: 18px;
   padding: 30px 28px 0;
-  min-height: 850px;
+  min-height: 430px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -524,7 +521,7 @@ h1 {
   background: #eaf2ff;
   border-radius: 16px;
   padding: 28px;
-  min-height: 330px;
+  min-height: 240px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -533,7 +530,7 @@ h1 {
 }
 .benefit--tall {
   grid-area: tall;
-  min-height: 680px;
+  min-height: 500px;
 }
 .benefit--wide {
   grid-area: wide;
@@ -588,7 +585,6 @@ h1 {
   border-radius: clamp(56px, 6vw, 96px) 0 0 0;
   padding-block: clamp(86px, 8vw, 160px);
   overflow: hidden;
-  min-height: 2400px;
 }
 .request__grid {
   display: grid;
