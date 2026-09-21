@@ -513,9 +513,22 @@ h1 {
 
 .benefits__grid {
   display: grid;
-  grid-template-columns: 1.25fr 1.08fr 0.92fr;
-  grid-template-areas: "tall assortment price" "tall delivery quality" "wide wide flex";
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-areas: "tall top top" "tall middle middle" "wide wide flex";
   gap: 16px;
+}
+.benefits__pair {
+  display: grid;
+  min-width: 0;
+  gap: 16px;
+}
+.benefits__pair--top {
+  grid-area: top;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr);
+}
+.benefits__pair--middle {
+  grid-area: middle;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .benefit {
   background: #eaf2ff;
@@ -526,6 +539,7 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
   gap: 28px;
+  min-width: 0;
   box-shadow: inset 0 0 0 1px rgba(7, 11, 36, 0.025);
 }
 .benefit--tall {
@@ -536,19 +550,7 @@ h1 {
   grid-area: wide;
   justify-content: center;
 }
-.benefit:nth-child(2) {
-  grid-area: assortment;
-}
-.benefit:nth-child(3) {
-  grid-area: price;
-}
-.benefit:nth-child(4) {
-  grid-area: delivery;
-}
-.benefit:nth-child(5) {
-  grid-area: quality;
-}
-.benefit:nth-child(7) {
+.benefit--flex {
   grid-area: flex;
 }
 .benefit__icon {
@@ -738,6 +740,13 @@ h1 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-template-areas: "tall assortment" "tall price" "delivery quality" "wide wide" "flex flex";
   }
+  .benefits__pair {
+    display: contents;
+  }
+  .benefit--assortment { grid-area: assortment; }
+  .benefit--price { grid-area: price; }
+  .benefit--delivery { grid-area: delivery; }
+  .benefit--quality { grid-area: quality; }
   .benefit--tall {
     min-height: 456px;
   }
@@ -880,7 +889,7 @@ h1 {
   .benefit--wide {
     grid-area: auto;
   }
-  .benefit:nth-child(n) {
+  .benefit {
     grid-area: auto;
   }
   .benefit {
