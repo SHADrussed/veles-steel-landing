@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1552f0" />
+    <meta name="description" content="Подготовьте запрос на расчёт металлопроката для компании Велес Сталь." />
+    <title>Калькулятор металлопроката — Велес Сталь</title>
+    <link rel="stylesheet" href="styles.css?v=3" />
+    <link rel="stylesheet" href="calculator.css" />
+    <script src="app.js?v=3" defer></script>
+    <script src="calculator.js" defer></script>
+  </head>
+  <body class="calculator-page">
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <header class="header">
+      <div class="container header__inner">
+        <a class="brand" href="index.html#main" aria-label="Велес Сталь — главная">
+          <img src="assets/logo-mark.png" alt="" />
+          <span class="visually-hidden">Велес Сталь</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-controls="navigation" aria-expanded="false" aria-label="Открыть меню">
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="navigation" class="navigation" aria-label="Основная навигация">
+          <a href="index.html#products">Каталог</a>
+          <a href="calculator.html" aria-current="page">Калькулятор металлопроката</a>
+          <a href="index.html#about">О компании</a>
+          <a href="index.html#contacts">Контакты</a>
+        </nav>
+        <div class="header__contacts">
+          <a class="contact-line" href="tel:+79999999999"><img class="calculator-contact-icon" src="assets/icon-phone.svg" alt="" />+7 999 999 99 99</a>
+          <a class="contact-line" href="mailto:writeyourmail@gmail.com"><img class="calculator-contact-icon" src="assets/icon-mail.svg" alt="" />writeyourmail@gmail.com</a>
+        </div>
+        <a class="button header__cta" href="index.html#request">Оставить заявку</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="calculator-hero gradient" aria-labelledby="calculator-title">
+        <div class="container">
+          <p class="calculator-eyebrow">Велес Сталь / Подбор продукции</p>
+          <h1 id="calculator-title">Калькулятор <em>металлопроката</em></h1>
+          <p>Укажите параметры изделия. Мы перенесём их в заявку, чтобы менеджер подготовил точный расчёт.</p>
+        </div>
+      </section>
+
+      <section class="calculator-workspace container" aria-label="Параметры металлопроката">
+        <form id="calculator-form" class="calculator-form">
+          <h2>Параметры <em>заказа</em></h2>
+          <div class="calculator-fields">
+            <label for="calc-product">Вид продукции
+              <select id="calc-product" name="product" required>
+                <option value="">Выберите продукцию</option>
+                <option>Цветной металлопрокат</option>
+                <option>Чёрный металлопрокат</option>
+                <option>Трубопроводная арматура</option>
+                <option>Химическая продукция</option>
+              </select>
+            </label>
+            <label for="calc-material">Материал или марка
+              <input id="calc-material" name="material" placeholder="Например, сталь 09Г2С" required maxlength="100" />
+            </label>
+            <label for="calc-size">Профиль и размеры
+              <input id="calc-size" name="size" placeholder="Например, труба 40 × 3 мм" required maxlength="120" />
+            </label>
+            <div class="calculator-fields__row">
+              <label for="calc-length">Длина, м
+                <input id="calc-length" name="length" type="number" min="0.01" step="any" inputmode="decimal" placeholder="6" />
+              </label>
+              <label for="calc-quantity">Количество, шт.
+                <input id="calc-quantity" name="quantity" type="number" min="1" step="1" inputmode="numeric" placeholder="10" />
+              </label>
+            </div>
+            <label for="calc-comment">Дополнительные условия
+              <textarea id="calc-comment" name="comment" rows="4" placeholder="Укажите сроки, адрес поставки или другие детали" maxlength="500"></textarea>
+            </label>
+          </div>
+          <button class="button" type="submit">Продолжить к заявке</button>
+          <p class="calculator-note">Стоимость и масса здесь не вычисляются: итоговый расчёт готовит менеджер после уточнения параметров.</p>
+        </form>
+
+        <aside class="calculator-summary" aria-labelledby="summary-title">
+          <span class="calculator-summary__icon" aria-hidden="true"><img src="assets/icon-range.svg" alt="" /></span>
+          <h2 id="summary-title">Ваш <em>запрос</em></h2>
+          <p>Параметры появятся здесь по мере заполнения полей.</p>
+          <dl>
+            <div><dt>Продукция</dt><dd data-summary="product">Не выбрана</dd></div>
+            <div><dt>Материал</dt><dd data-summary="material">Не указан</dd></div>
+            <div><dt>Размеры</dt><dd data-summary="size">Не указаны</dd></div>
+            <div><dt>Длина</dt><dd data-summary="length">Не указана</dd></div>
+            <div><dt>Количество</dt><dd data-summary="quantity">Не указано</dd></div>
+          </dl>
+          <a href="index.html#request">Перейти к форме заявки <span aria-hidden="true">↗</span></a>
+        </aside>
+      </section>
+    </main>
+
+    <footer id="contacts" class="footer gradient">
+      <div class="container">
+        <div class="footer__intro">
+          <a class="brand brand--footer" href="index.html#main" aria-label="Велес Сталь — главная"><img src="assets/logo-mark.png" alt="" /></a>
+          <p>Выбирая ООО «Велес Сталь», вы получаете надёжного партнёра для решения производственных задач.</p>
+        </div>
+        <div class="footer__grid calculator-footer-grid">
+          <div>
+            <h3>Связаться с нами</h3>
+            <a href="tel:+79999999999">+7 999 999 99 99</a>
+            <a href="mailto:writeyourmail@gmail.com">writeyourmail@gmail.com</a>
+          </div>
+          <div>
+            <h3>Информация</h3>
+            <a href="index.html#about">О компании</a>
+            <a href="index.html#process">Как мы работаем</a>
+            <a href="index.html#products">Каталог</a>
+            <a href="index.html#request">Оставить заявку</a>
+          </div>
+          <div>
+            <h3>Каталог продукции</h3>
+            <a href="index.html#products">Цветной металлопрокат</a>
+            <a href="index.html#products">Чёрный металлопрокат</a>
+            <a href="index.html#products">Трубопроводная арматура</a>
+          </div>
+        </div>
+        <div class="footer__bottom"><span>© 2015–2026 Велес Сталь</span><a href="index.html#main">На главную ↑</a></div>
+      </div>
+    </footer>
+  </body>
+</html>
