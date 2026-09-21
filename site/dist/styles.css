@@ -175,7 +175,7 @@ h1{font-size:clamp(52px,6.05vw,112px);max-width:1460px;letter-spacing:-.025em}
   .steps__number{width:54px;height:54px;font-size:22px}
   .steps h3{font-size:26px;margin-bottom:10px}
   .steps p{font-size:17px}
-  .products__grid{grid-template-columns:repeat(4,minmax(280px,1fr))}
+  .products__grid{grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible;gap:18px}
   .product{min-height:520px}
   .benefits__grid{grid-template-columns:1fr;grid-template-areas:none;gap:14px}
   .benefit--tall{min-height:210px}
