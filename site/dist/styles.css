@@ -44,17 +44,15 @@ h2{font-size:clamp(44px,5.05vw,88px);margin-bottom:clamp(38px,5.1vw,86px);letter
 .skip-link:focus{transform:none}
 
 .header{background:#e8f1ff;position:relative;z-index:5;border-radius:0 0 0 70px;box-shadow:0 1px 0 rgba(7,11,36,.04)}
-.header__inner{display:flex;align-items:center;gap:clamp(26px,3vw,52px);min-height:118px}
+.header__inner{display:flex;align-items:center;gap:clamp(20px,2.1vw,34px);min-height:118px}
 .brand{display:inline-flex;align-items:center;justify-content:center;flex:none}
-.brand img{display:block;width:104px;height:84px;object-fit:contain;object-position:center;filter:drop-shadow(0 8px 14px rgba(7,11,36,.12))}
-.navigation{display:flex;align-items:center;gap:clamp(24px,2.4vw,44px);font-size:clamp(17px,1.15vw,22px);flex:1;white-space:nowrap}
+.brand img{display:block;width:92px;height:76px;object-fit:contain;object-position:center;filter:drop-shadow(0 8px 14px rgba(7,11,36,.12))}
+.navigation{display:flex;align-items:center;gap:clamp(18px,1.8vw,32px);font-size:clamp(16px,1.02vw,20px);flex:1;white-space:nowrap}
 .navigation a:hover,.footer a:hover{color:var(--blue)}
-.header__contacts{display:flex;align-items:center;gap:22px;font-size:clamp(16px,1vw,20px);white-space:nowrap}
+.header__contacts{display:flex;align-items:center;gap:16px;font-size:clamp(15px,.92vw,18px);white-space:nowrap}
 .contact-line{display:inline-flex;align-items:center;gap:12px;overflow-wrap:anywhere}
-.contact-line::before{content:"";width:26px;height:26px;flex:none;background:var(--blue);mask:center/contain no-repeat}
-.contact-line--phone::before{mask-image:radial-gradient(circle at 70% 70%,transparent 0 35%,#000 36% 48%,transparent 49%),linear-gradient(45deg,transparent 0 31%,#000 32% 68%,transparent 69%)}
-.contact-line--mail::before{mask-image:linear-gradient(#000 0 0)}
-.header__cta{min-height:54px;padding:14px 23px;font-size:20px;border-radius:18px}
+.contact-icon{width:24px;height:24px;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.header__cta{min-height:54px;min-width:164px;padding:14px 20px;font-size:18px;border-radius:18px;white-space:nowrap}
 .menu-toggle{display:none;border:0;background:transparent;width:48px;height:48px;padding:10px}
 .menu-toggle span{display:block;height:2px;background:var(--ink);margin:6px 0;transition:transform .2s,opacity .2s}
 .menu-toggle[aria-expanded=true] span:nth-child(1){transform:translateY(8px) rotate(45deg)}
@@ -144,7 +142,7 @@ h1{font-size:clamp(52px,6.05vw,112px);max-width:1460px;letter-spacing:-.025em}
 
 @media(max-width:1350px){
   .header__contacts{display:none}
-  .products__grid{grid-template-columns:repeat(4,minmax(300px,1fr))}
+  .products__grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;overflow:visible}
   .process__visual{min-height:520px}
   .benefits__grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-areas:"tall assortment" "tall price" "delivery quality" "wide wide" "flex flex"}
   .benefit--tall{min-height:564px}
@@ -154,7 +152,7 @@ h1{font-size:clamp(52px,6.05vw,112px);max-width:1460px;letter-spacing:-.025em}
   .container{width:calc(100% - 40px)}
   .header{border-radius:0 0 0 40px}
   .header__inner{min-height:82px;gap:14px;flex-wrap:wrap}
-  .brand img{width:74px;height:62px}
+  .brand img{width:70px;height:58px}
   .menu-toggle{display:block;margin-left:auto;order:3}
   .header__cta{font-size:16px;min-height:46px;padding:10px 15px;margin-left:auto}
   .navigation{display:none;order:4;flex-basis:100%;padding:0 0 22px;align-items:stretch;gap:4px;font-size:18px;white-space:normal}
@@ -187,7 +185,7 @@ h1{font-size:clamp(52px,6.05vw,112px);max-width:1460px;letter-spacing:-.025em}
   .request__contacts{margin-top:34px;font-size:25px}
   .request-form{max-width:650px;width:100%;margin-inline:auto}
   .footer__intro{grid-template-columns:80px 1fr;gap:25px}
-  .brand--footer img{width:88px;height:72px}
+  .brand--footer img{width:84px;height:68px}
   .footer__grid{gap:32px;grid-template-columns:1fr 1fr;padding-block:48px}
   .footer__grid>div:last-child{grid-column:1/-1}
 }
