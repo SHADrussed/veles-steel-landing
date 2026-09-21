@@ -513,7 +513,7 @@ h1 {
 
 .benefits__grid {
   display: grid;
-  grid-template-columns: 1.25fr 1fr 1fr;
+  grid-template-columns: 1.25fr 1.08fr 0.92fr;
   grid-template-areas: "tall assortment price" "tall delivery quality" "wide wide flex";
   gap: 16px;
 }
