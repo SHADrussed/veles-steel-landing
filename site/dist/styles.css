@@ -513,7 +513,7 @@ h1 {
 
 .benefits__grid {
   display: grid;
-  grid-template-columns: 1.25fr 1.08fr 0.92fr;
+  grid-template-columns: 1.25fr 1fr 1fr;
   grid-template-areas: "tall assortment price" "tall delivery quality" "wide wide flex";
   gap: 16px;
 }
@@ -538,6 +538,9 @@ h1 {
 }
 .benefit:nth-child(2) {
   grid-area: assortment;
+  width: calc(100% + 12px);
+  position: relative;
+  z-index: 1;
 }
 .benefit:nth-child(3) {
   grid-area: price;
@@ -740,6 +743,9 @@ h1 {
   }
   .benefit--tall {
     min-height: 456px;
+  }
+  .benefit:nth-child(2) {
+    width: 100%;
   }
 }
 
