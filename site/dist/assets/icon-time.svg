@@ -1,0 +1,37 @@
+<svg viewBox="0 0 145.011 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="145.010742" height="144.000000" fill="none" customFrame="#000000">
+	<defs>
+		<g id="pixso_custom_effect_48">
+			<effect x="4.751515" y="4.751515" visibility="visible" fill="rgb(17,84,237)" fill-opacity="0.400000006" effectType="dropShadow" stdDeviation="9.50303078" radius="0" />
+		</g>
+		<filter id="filter_48" width="136.517090" height="99.411133" x="8.493652" y="14.492065" filterUnits="userSpaceOnUse" customEffect="url(#pixso_custom_effect_48)" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix" />
+			<feOffset dx="4.751515" dy="4.751515" in="SourceAlpha" />
+			<feGaussianBlur stdDeviation="3.16767693" />
+			<feColorMatrix type="matrix" values="0 0 0 0 0.0666667 0 0 0 0 0.329412 0 0 0 0 0.929412 0 0 0 0.4 0 " />
+			<feBlend result="effect_dropShadow_1" in2="BackgroundImageFix" mode="normal" />
+			<feBlend result="shape" in="SourceGraphic" in2="effect_dropShadow_1" mode="normal" />
+		</filter>
+		<g id="pixso_custom_effect_49">
+			<effect x="0.000000" y="-3.563637" visibility="visible" fill="rgb(255,255,255)" fill-opacity="0.25" effectType="dropShadow" stdDeviation="4.75151539" radius="0" />
+		</g>
+		<filter id="filter_49" width="54.642334" height="54.642334" x="38.442383" y="61.666748" filterUnits="userSpaceOnUse" customEffect="url(#pixso_custom_effect_49)" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix" />
+			<feColorMatrix result="hardAlpha" in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1.25 0 " />
+			<feOffset dx="0.000000" dy="-3.563637" in="hardAlpha" />
+			<feGaussianBlur stdDeviation="1.58383846" />
+			<feComposite k2="-1" k3="1" in2="hardAlpha" operator="out" />
+			<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0 " />
+			<feBlend result="effect_dropShadow_1" in2="BackgroundImageFix" mode="normal" />
+			<feBlend result="shape" in="SourceGraphic" in2="effect_dropShadow_1" mode="normal" />
+		</filter>
+	</defs>
+	<rect id="icon-time" width="144.000000" height="144.000000" x="0.000000" y="0.000000" fill="rgb(255,255,255)" fill-opacity="0" />
+	<g id="Group 13">
+		<g filter="url(#filter_48)">
+			<path id="Vector 15" d="M23 49.5L58.7168 77.4852L105.5 29" stroke="rgb(17,84,237)" stroke-linecap="round" stroke-width="19.433228" />
+		</g>
+		<g opacity="0.800000012" filter="url(#filter_49)">
+			<circle id="Ellipse 183" cx="65.7635422" cy="92.5516281" r="22.5696964" fill="rgb(223,234,255)" />
+		</g>
+	</g>
+</svg>

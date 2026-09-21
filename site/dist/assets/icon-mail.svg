@@ -1,0 +1,37 @@
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="144.000000" height="144.000000" fill="none" customFrame="#000000">
+	<defs>
+		<g id="pixso_custom_effect_56">
+			<effect x="0.000000" y="3.103825" visibility="visible" fill="rgb(17,84,237)" fill-opacity="0.400000006" effectType="dropShadow" stdDeviation="3.10382509" radius="0" />
+		</g>
+		<filter id="filter_56" width="131.912720" height="76.819824" x="6.431641" y="36.623169" filterUnits="userSpaceOnUse" customEffect="url(#pixso_custom_effect_56)" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix" />
+			<feOffset dx="0.000000" dy="3.103825" in="SourceAlpha" />
+			<feGaussianBlur stdDeviation="1.03460836" />
+			<feColorMatrix type="matrix" values="0 0 0 0 0.0666667 0 0 0 0 0.329412 0 0 0 0 0.929412 0 0 0 0.4 0 " />
+			<feBlend result="effect_dropShadow_1" in2="BackgroundImageFix" mode="normal" />
+			<feBlend result="shape" in="SourceGraphic" in2="effect_dropShadow_1" mode="normal" />
+		</filter>
+		<g id="pixso_custom_effect_57">
+			<effect x="1.551913" y="4.655738" visibility="visible" fill="rgb(255,255,255)" fill-opacity="0.25" effectType="dropShadow" stdDeviation="6.20765018" radius="0" />
+		</g>
+		<filter id="filter_57" width="142.000000" height="83.720459" x="1.000000" y="18.000122" filterUnits="userSpaceOnUse" customEffect="url(#pixso_custom_effect_57)" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix" />
+			<feColorMatrix result="hardAlpha" in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1.25 0 " />
+			<feOffset dx="1.551913" dy="4.655738" in="hardAlpha" />
+			<feGaussianBlur stdDeviation="2.06921673" />
+			<feComposite k2="-1" k3="1" in2="hardAlpha" operator="out" />
+			<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0 " />
+			<feBlend result="effect_dropShadow_1" in2="BackgroundImageFix" mode="normal" />
+			<feBlend result="shape" in="SourceGraphic" in2="effect_dropShadow_1" mode="normal" />
+		</filter>
+	</defs>
+	<rect id="icon-mail" width="144.000000" height="144.000000" x="0.000000" y="0.000000" fill="rgb(255,255,255)" fill-opacity="0" />
+	<g id="Group 16">
+		<g filter="url(#filter_56)">
+			<rect id="Rectangle 43" width="125.704918" height="70.612022" x="9.535645" y="36.623047" rx="15.519125" fill="rgb(17,84,237)" />
+		</g>
+		<g opacity="0.800000012" filter="url(#filter_57)">
+			<path id="Polygon 1" d="M123.571 47.7673C126.721 50.6295 124.697 55.8689 120.441 55.8689L21.5594 55.8689C17.3033 55.8689 15.2785 50.6295 18.4285 47.7673L67.8691 2.84478C69.6446 1.23151 72.3554 1.23151 74.1309 2.84478L123.571 47.7673Z" fill="rgb(223,234,255)" fill-rule="evenodd" transform="matrix(1,0,0,-1,1,92.4919)" />
+		</g>
+	</g>
+</svg>

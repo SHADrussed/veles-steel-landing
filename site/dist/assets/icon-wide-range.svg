@@ -1,0 +1,53 @@
+<svg viewBox="0 0 149 149" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="149.000000" height="149.000000" fill="none">
+	<defs>
+		<g id="pixso_custom_effect_30">
+			<effect x="3.214272" y="3.214272" visibility="visible" fill="rgb(17,84,237)" fill-opacity="0.400000006" effectType="dropShadow" stdDeviation="6.428545" radius="0" />
+		</g>
+		<filter id="filter_30" width="82.064697" height="81.908569" x="56.216797" y="26.785767" filterUnits="userSpaceOnUse" customEffect="url(#pixso_custom_effect_30)" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix" />
+			<feOffset dx="3.214272" dy="3.214272" in="SourceAlpha" />
+			<feGaussianBlur stdDeviation="2.14284825" />
+			<feColorMatrix type="matrix" values="0 0 0 0 0.0666667 0 0 0 0 0.329412 0 0 0 0 0.929412 0 0 0 0.4 0 " />
+			<feBlend result="effect_dropShadow_1" in2="BackgroundImageFix" mode="normal" />
+			<feBlend result="shape" in="SourceGraphic" in2="effect_dropShadow_1" mode="normal" />
+		</filter>
+		<g id="pixso_custom_effect_31">
+			<effect x="0.000000" y="3.214272" visibility="visible" fill="rgb(255,255,255)" fill-opacity="0.25" effectType="dropShadow" stdDeviation="6.428545" radius="0" />
+			<effect x="-3.214272" y="-2.410704" visibility="visible" fill="rgb(255,255,255)" fill-opacity="0.25" effectType="dropShadow" stdDeviation="3.2142725" radius="0" />
+			<effect visibility="visible" effectType="backgroundBlur" saturation="0" stdDeviation="9.32139015" />
+		</g>
+		<filter id="filter_31" width="82.064941" height="84.319336" x="13.571289" y="45.323486" filterUnits="userSpaceOnUse" customEffect="url(#pixso_custom_effect_31)" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix" />
+			<feColorMatrix result="hardAlpha" in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1.25 0 " />
+			<feOffset dx="0.000000" dy="3.214272" in="hardAlpha" />
+			<feGaussianBlur stdDeviation="2.14284825" />
+			<feComposite k2="-1" k3="1" in2="hardAlpha" operator="out" />
+			<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0 " />
+			<feBlend result="effect_dropShadow_1" in2="BackgroundImageFix" mode="normal" />
+			<feColorMatrix result="hardAlpha" in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1.25 0 " />
+			<feOffset dx="-3.214272" dy="-2.410704" in="hardAlpha" />
+			<feGaussianBlur stdDeviation="1.07142413" />
+			<feComposite k2="-1" k3="1" in2="hardAlpha" operator="out" />
+			<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0 " />
+			<feBlend result="effect_dropShadow_2" in2="effect_dropShadow_1" mode="normal" />
+			<feBlend result="shape" in="SourceGraphic" in2="effect_dropShadow_2" mode="normal" />
+		</filter>
+		<clipPath id="outline_mask_1" transform="matrix(1,0,0,1,-13.5713,-45.3235)">
+			<path d="M73.6732 58.591C90.4317 62.0413 89.3858 78.3069 89.0778 87.2407C88.3235 109.113 78.6037 112.502 74.907 113.734C69.9779 115.171 55.6837 118.416 37.9394 119.895C15.759 121.743 20.6868 98.947 20.0707 69.0651C19.4546 39.1832 52.7251 54.2782 73.6732 58.591Z" fill="rgb(255,255,255)" fill-rule="evenodd" />
+		</clipPath>
+	</defs>
+	<rect id="Icon-wide range" width="149.000000" height="149.000000" x="0.000000" y="0.000000" fill="rgb(255,255,255)" fill-opacity="0" />
+	<g id="Group 6">
+		<g filter="url(#filter_30)">
+			<path id="Vector 14" d="M53.6732 7.64254C70.4317 11.0928 69.3858 27.3584 69.0778 36.2922C68.3235 58.1645 58.6037 61.5531 54.907 62.7854C49.9779 64.223 35.6837 67.4679 17.9394 68.9466C-4.24095 70.795 0.686825 47.9985 0.0707044 18.1166C-0.545417 -11.7653 32.7251 3.3297 53.6732 7.64254Z" fill="rgb(17,84,237)" fill-rule="evenodd" transform="matrix(-1,0,0,1,128.639,30)" />
+		</g>
+		<g data-pixso-skip-parse="true">
+			<foreignObject width="82.064941" height="84.319336" x="13.571289" y="45.323486">
+				<div xmlns="http://www.w3.org/1999/xhtml" style="clip-path:url(#outline_mask_1);height:100%;backdrop-filter:blur(4.660695px);width:100%;-webkit-backdrop-filter:blur(4.660695px);" />
+			</foreignObject>
+		</g>
+		<g opacity="0.800000012" filter="url(#filter_31)">
+			<path id="Vector 13" d="M73.6732 58.591C90.4317 62.0413 89.3858 78.3069 89.0778 87.2407C88.3235 109.113 78.6037 112.502 74.907 113.734C69.9779 115.171 55.6837 118.416 37.9394 119.895C15.759 121.743 20.6868 98.947 20.0707 69.0651C19.4546 39.1832 52.7251 54.2782 73.6732 58.591Z" fill="rgb(223,234,255)" fill-rule="evenodd" />
+		</g>
+	</g>
+</svg>
