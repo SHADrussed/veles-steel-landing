@@ -4,7 +4,6 @@ const catalogData = {
   nonferrous: {
     title: 'Цветной металлопрокат',
     filters: [
-      'Все',
       'Цветные металлы и сплавы',
       'Сварочные материалы и флюсы',
       'Порошки, смеси и металлоиды',
@@ -25,7 +24,7 @@ const catalogData = {
   black: {
     title: 'Черный металлопрокат',
     filters: [
-      'Все',
+      'Листовой прокат',
       'Фасонный прокат',
       'Сортовой прокат',
       'Трубный прокат',
@@ -43,7 +42,7 @@ const catalogData = {
 
   pipes: {
     title: 'Трубопроводная арматура',
-    filters: ['Все', 'Запорная арматура', 'Соединительные детали', 'Фланцы'],
+    filters: ['Запорная арматура', 'Соединительные детали', 'Фланцы'],
     products: [
       { name: 'Задвижки', group: 'Запорная арматура' },
       { name: 'Вентили', group: 'Запорная арматура' },
@@ -58,7 +57,7 @@ const catalogData = {
 
   chemical: {
     title: 'Химическая продукция',
-    filters: ['Все'],
+    filters: [],
     products: [
       { name: 'Промышленная химия', group: 'Все' },
       { name: 'Реактивная химия', group: 'Все' },
@@ -111,7 +110,7 @@ function readState() {
 }
 
 let { category: activeCategory, product: activeProduct } = readState();
-let activeFilter = 'Все';
+let activeFilter = null;
 
 function setUrl({ category = activeCategory, product = null }) {
   const next = new URL(window.location.href);
@@ -140,7 +139,7 @@ function createCategoryTabs() {
       event.preventDefault();
       activeCategory = key;
       activeProduct = null;
-      activeFilter = 'Все';
+      activeFilter = null;
       setUrl({ category: key });
       render();
     });
@@ -151,8 +150,6 @@ function createCategoryTabs() {
 
 function createSubtabs(category) {
   subtabsRoot.innerHTML = '';
-
-  if (activeProduct) return;
 
   category.filters.forEach((filter) => {
     const button = document.createElement('button');
@@ -209,7 +206,7 @@ function createCards(category) {
   cardsRoot.className = 'catalog-cards';
   cardsRoot.innerHTML = '';
 
-  const products = activeFilter === 'Все'
+  const products = !activeFilter
     ? category.products
     : category.products.filter((product) => product.group === activeFilter);
 
@@ -235,7 +232,7 @@ function createProductTable() {
   }
 
   title.textContent = catalogData[activeCategory].title;
-  subtabsRoot.innerHTML = '';
+  createSubtabs(catalogData[activeCategory]);
   cardsRoot.className = 'catalog-product-view';
   cardsRoot.innerHTML = '';
 
@@ -248,7 +245,7 @@ function createProductTable() {
   back.textContent = '← Назад к каталогу';
   back.addEventListener('click', () => {
     activeProduct = null;
-    activeFilter = 'Все';
+    activeFilter = null;
     setUrl({ category: activeCategory });
     render();
   });
@@ -339,6 +336,6 @@ window.addEventListener('popstate', () => {
   const state = readState();
   activeCategory = state.category;
   activeProduct = state.product;
-  activeFilter = 'Все';
+  activeFilter = null;
   render();
 });
