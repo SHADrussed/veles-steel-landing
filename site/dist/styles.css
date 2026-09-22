@@ -510,7 +510,7 @@ h1 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .benefit {
-  background: #eaf2ff;
+  background: #dfeaff;
   border-radius: 16px;
   padding: 28px;
   min-height: 240px;
