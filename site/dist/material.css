@@ -221,3 +221,50 @@
     font-size: 16px;
   }
 }
+
+
+.material-page .navigation [aria-current="page"] {
+  color: var(--blue);
+}
+
+.material-standard a {
+  transition:
+    background-color 180ms ease,
+    transform 180ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .material-standard a:hover {
+    background: var(--blue-dark);
+    transform: translateY(-2px);
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1100px) {
+  .material-section {
+    padding-bottom: 140px;
+  }
+
+  .material-standard {
+    min-height: 96px;
+    padding: 20px 22px;
+  }
+}
+
+@media (max-width: 420px) {
+  .material-hero {
+    padding-top: 48px;
+  }
+
+  .material-hero h1 {
+    font-size: 28px;
+  }
+
+  .material-standard-list {
+    gap: 12px;
+  }
+
+  .material-standard {
+    border-radius: 16px;
+  }
+}
