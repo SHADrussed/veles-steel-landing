@@ -1,4 +1,12 @@
 @font-face {
+  font-family: 'Involve';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(involve-vf.ttf) format('truetype');
+}
+
+@font-face {
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 400;

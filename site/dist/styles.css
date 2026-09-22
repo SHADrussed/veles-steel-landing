@@ -1,4 +1,4 @@
-@import url("assets/fonts.css");
+@import url("assets/fonts.css?v=2");
 
 :root {
   --blue: #0b5cff;
@@ -852,6 +852,19 @@ h1 {
   }
 }
 
+@media (min-width: 1601px) {
+  .products__grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    overflow: visible;
+  }
+}
+
+@media (min-width: 1101px) and (max-width: 1600px) {
+  .header__contacts {
+    display: none;
+  }
+}
+
 @media (max-width: 1100px) {
   .container {
     width: calc(100% - 40px);
@@ -1088,7 +1101,7 @@ h1 {
     gap: 0;
   }
   .about {
-    padding-bottom: 425px;
+    padding-bottom: 398px;
   }
   .about__copy {
     max-width: 570px;
@@ -1100,7 +1113,7 @@ h1 {
     margin-top: 70px;
   }
   .process {
-    padding-block: 70px 173px;
+    padding-block: 70px 162px;
   }
   .process__grid {
     margin-bottom: 70px;
@@ -1245,7 +1258,7 @@ h1 {
     height: 142px;
   }
   .hero__content {
-    padding-block: 20px 48px;
+    padding-block: 20px 33px;
   }
   h1 {
     font-size: 18px;
