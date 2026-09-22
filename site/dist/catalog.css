@@ -242,3 +242,138 @@
     font-size: 20px;
   }
 }
+
+
+.catalog-product-view {
+  margin-top: 80px;
+}
+
+.catalog-product-toolbar {
+  display: grid;
+  gap: 32px;
+  margin-bottom: 24px;
+}
+
+.catalog-back {
+  width: fit-content;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: #1154ed;
+  font: inherit;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.catalog-back:hover {
+  text-decoration: underline;
+}
+
+.catalog-product-title {
+  min-height: 73px;
+  margin: 0;
+  padding: 15px 20px;
+  border-radius: 20px 20px 0 0;
+  background: #1154ed;
+  color: #fff;
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.catalog-table-scroll {
+  overflow-x: auto;
+  border-radius: 0 0 20px 20px;
+  background: #dfeaff;
+}
+
+.catalog-table {
+  width: 100%;
+  min-width: 900px;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.catalog-table th,
+.catalog-table td {
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(16, 14, 53, 0.16);
+  border-right: 1px solid rgba(16, 14, 53, 0.12);
+  text-align: left;
+  vertical-align: middle;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.catalog-table th {
+  height: 54px;
+  font-weight: 500;
+  color: #100e35;
+}
+
+.catalog-table td {
+  min-height: 58px;
+  background: #fff;
+}
+
+.catalog-table th:last-child,
+.catalog-table td:last-child {
+  border-right: 0;
+}
+
+.catalog-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.catalog-table__contact {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 8px 16px;
+  border-radius: 14px;
+  background: #1154ed;
+  color: #fff;
+  font-size: 16px;
+}
+
+.catalog-table__contact:hover {
+  filter: brightness(0.96);
+}
+
+@media (max-width: 1100px) {
+  .catalog-product-view {
+    margin-top: 56px;
+  }
+
+  .catalog-product-title {
+    font-size: 30px;
+  }
+
+  .catalog-table th,
+  .catalog-table td {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 700px) {
+  .catalog-product-view {
+    margin-top: 40px;
+  }
+
+  .catalog-back {
+    font-size: 16px;
+  }
+
+  .catalog-product-title {
+    min-height: 60px;
+    font-size: 25px;
+  }
+
+  .catalog-table th,
+  .catalog-table td {
+    padding: 12px 14px;
+    font-size: 15px;
+  }
+}
