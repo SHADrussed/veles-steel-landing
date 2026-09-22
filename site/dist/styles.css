@@ -1,11 +1,11 @@
 @import url("assets/fonts.css?v=2");
 
 :root {
-  --blue: #0b5cff;
+  --blue: #1154ed;
   --blue-dark: #0047d7;
-  --ink: #070b24;
-  --muted: #687083;
-  --pale: #eaf2ff;
+  --ink: #100e35;
+  --muted: #777a8d;
+  --pale: #dfeaff;
   --pale-2: #f3f7ff;
   --line: #111038;
   --white: #fff;
@@ -117,7 +117,7 @@ h2 {
   min-height: 48px;
   padding: 12px 22px;
   border: 1px solid var(--blue);
-  border-radius: 12px;
+  border-radius: 20px;
   background: var(--blue);
   color: #fff;
   font-size: clamp(14px, 1.1vw, 16px);
@@ -159,10 +159,10 @@ h2 {
 }
 
 .header {
-  background: #e8f1ff;
+  background: #dfeaff;
   position: relative;
   z-index: 5;
-  border-radius: 0 0 0 36px;
+  border-radius: 0 0 26px 26px;
   box-shadow: 0 1px 0 rgba(7, 11, 36, 0.04);
 }
 .header__inner {
@@ -768,14 +768,30 @@ h1 {
 
 @media (min-width: 1101px) {
   .container {
-    width: calc(100% - clamp(200px, 13.8vw, 340px));
+    width: min(1720px, calc(100% - 200px));
+    max-width: none;
   }
   .header__inner {
     min-height: 120px;
+    gap: 22px;
   }
   .brand img {
-    width: 75px;
-    height: 80px;
+    width: 88px;
+    height: 78px;
+  }
+  .navigation {
+    gap: 48px;
+    font-size: 20px;
+  }
+  .header__contacts {
+    gap: 20px;
+    font-size: 20px;
+  }
+  .header__cta {
+    min-width: 308px;
+    min-height: 72px;
+    border-radius: 20px;
+    font-size: 32px;
   }
   .hero__image {
     height: 370px;
