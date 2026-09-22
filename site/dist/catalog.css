@@ -423,14 +423,11 @@
 }
 
 
-@media (hover: none), (pointer: coarse) {
-  .catalog-card__action {
-    opacity: 1;
-    transform: none;
-    pointer-events: auto;
-  }
+.catalog-card[role="link"] {
+  cursor: pointer;
+}
 
-  .catalog-card__meta {
-    opacity: 0;
-  }
+.catalog-card:focus-visible {
+  outline: 3px solid #1154ed;
+  outline-offset: 4px;
 }
