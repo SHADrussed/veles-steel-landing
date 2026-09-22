@@ -61,6 +61,10 @@
   margin-top: 32px;
 }
 
+.catalog-subtabs:empty {
+  display: none;
+}
+
 .catalog-cards {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -273,16 +277,18 @@
 
 
 .catalog-product-view {
+  position: relative;
   margin-top: 80px;
 }
 
 .catalog-product-toolbar {
-  display: grid;
-  gap: 32px;
-  margin-bottom: 24px;
+  margin: 0;
 }
 
 .catalog-back {
+  position: absolute;
+  right: 0;
+  top: -56px;
   width: fit-content;
   border: 0;
   padding: 0;
@@ -341,8 +347,8 @@
 }
 
 .catalog-table td {
-  min-height: 58px;
-  background: #fff;
+  height: 58px;
+  background: transparent;
 }
 
 .catalog-table th:last-child,
