@@ -23,7 +23,7 @@ const catalogData = {
   },
 
   black: {
-    title: 'Чёрный металлопрокат',
+    title: 'Черный металлопрокат',
     filters: [
       'Все',
       'Фасонный прокат',
@@ -93,7 +93,7 @@ const categoryOrder = ['nonferrous', 'black', 'pipes', 'chemical'];
 
 const categoryLabels = {
   nonferrous: 'Цветной металлопрокат',
-  black: 'Чёрный металлопрокат',
+  black: 'Черный металлопрокат',
   pipes: 'Трубопроводная арматура',
   chemical: 'Химическая продукция',
 };
@@ -319,6 +319,7 @@ function renderSubtabsAndCards() {
 
 function render() {
   const category = catalogData[activeCategory];
+  document.body.classList.toggle('is-product-view', Boolean(activeProduct));
   createCategoryTabs();
 
   if (activeProduct) {
