@@ -42,7 +42,7 @@
 
 .catalog-tab[aria-current="true"],
 .catalog-subtab[aria-pressed="true"] {
-  border-color: #1154ed;
+  border-color: #fff;
   background: #1154ed;
   color: #fff;
 }
@@ -66,6 +66,30 @@
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 20px;
   margin-top: 80px;
+}
+
+.catalog-pagination {
+  height: 104px;
+  display: grid;
+  place-items: end center;
+}
+
+.catalog-pagination span {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #1154ed;
+}
+
+.catalog-page.is-product-view .catalog-pagination {
+  display: none;
+}
+
+@media (min-width: 1351px) {
+  .catalog-cards {
+    min-height: 952px;
+    align-content: start;
+  }
 }
 
 .catalog-card {
@@ -164,6 +188,10 @@
 }
 
 @media (max-width: 1350px) {
+  .catalog-pagination {
+    display: none;
+  }
+
   .catalog-container {
     width: calc(100% - 80px);
   }
