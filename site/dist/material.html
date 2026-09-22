@@ -4,93 +4,151 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#1154ed" />
-    <meta name="description" content="Подготовьте запрос на расчёт металлопроката для компании Велес Сталь." />
-    <title>Калькулятор металлопроката — Велес Сталь</title>
+    <meta
+      name="description"
+      content="ГОСТы и ТУ на металлопрокат — Велес Сталь."
+    />
+    <title>ГОСТы и ТУ — Велес Сталь</title>
     <link rel="stylesheet" href="styles.css?v=11" />
-    <link rel="stylesheet" href="calculator.css?v=4" />
+    <link rel="stylesheet" href="material.css?v=5" />
     <script src="app.js?v=3" defer></script>
-    <script src="calculator.js?v=4" defer></script>
+    <script src="material.js?v=3" defer></script>
   </head>
-  <body class="calculator-page">
+  <body class="material-page">
     <a class="skip-link" href="#main">Перейти к содержимому</a>
+
     <header class="header">
       <div class="container header__inner">
         <a class="brand" href="index.html#main" aria-label="Велес Сталь — главная">
           <img src="assets/logo-mark.png" alt="" />
           <span class="visually-hidden">Велес Сталь</span>
         </a>
-        <button class="menu-toggle" type="button" aria-controls="navigation" aria-expanded="false" aria-label="Открыть меню">
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-controls="navigation"
+          aria-expanded="false"
+          aria-label="Открыть меню"
+        >
           <span></span><span></span><span></span>
         </button>
+
         <nav id="navigation" class="navigation" aria-label="Основная навигация">
           <a href="catalog.html">Каталог</a>
           <a href="calculator.html" aria-current="page">Калькулятор металлопроката</a>
           <a href="about.html">О компании</a>
-          <a href="index.html#contacts">Контакты</a>
+          <a href="#contacts">Контакты</a>
         </nav>
+
         <div class="header__contacts">
-          <a class="contact-line" href="tel:+79999999999"><img class="calculator-contact-icon" src="assets/icon-phone.svg" alt="" />+7 999 999 99 99</a>
-          <a class="contact-line" href="mailto:writeyourmail@gmail.com"><img class="calculator-contact-icon" src="assets/icon-mail.svg" alt="" />writeyourmail@gmail.com</a>
+          <a class="contact-line" href="tel:+79999999999">
+            <img class="material-contact-icon" src="assets/icon-phone.svg" alt="" />
+            +7 999 999 99 99
+          </a>
+          <a class="contact-line" href="mailto:writeyourmail@gmail.com">
+            <img class="material-contact-icon" src="assets/icon-mail.svg" alt="" />
+            writeyourmail@gmail.com
+          </a>
         </div>
+
         <a class="button header__cta" href="#request">Оставить заявку</a>
       </div>
     </header>
 
     <main id="main">
-      <section class="calculator-heading" aria-labelledby="calculator-title">
-        <div class="container">
-          <h1 id="calculator-title">Калькулятор <em>металлопроката</em></h1>
+      <section class="material-standards-page" aria-labelledby="material-title">
+        <div class="material-container">
+          <h1 id="material-title">
+            ГОСТы и ТУ на <em>“<span data-material-title>материал</span>”</em>
+          </h1>
+
+          <div class="material-docs">
+            <article class="material-doc material-doc--accent">
+              <h2>ГОСТ 9045-93</h2>
+              <p>Прокат тонколистовой холоднокатаный из низкоуглеродистой качественной стали для холодной штамповки. Технические условия.</p>
+            </article>
+
+            <article class="material-doc material-doc--accent">
+              <h2>ГОСТ 14918-2020 (80)</h2>
+              <p>Прокат листовой горячеоцинкованный. Технические условия.</p>
+            </article>
+
+            <article class="material-doc material-doc--accent">
+              <h2>ГОСТ 19904-90 (74)</h2>
+              <p>Прокат листовой холоднокатаный. Сортамент.</p>
+            </article>
+
+            <article class="material-doc">
+              <h2>СТО 16052861-001-2020</h2>
+              <p>Профили стальные листовые гнутые для строительства.</p>
+            </article>
+
+            <article class="material-doc">
+              <h2>СТО 17052861-002-2025</h2>
+            </article>
+
+            <article class="material-doc">
+              <h2>СТО ММК 401-2020</h2>
+            </article>
+
+            <article class="material-doc material-doc--accent">
+              <h2>ТС 14-101-658-2012</h2>
+              <p>Прокат тонколистовой холоднокатаный горячеоцинкованный. Техническое соглашение.</p>
+            </article>
+
+            <article class="material-doc">
+              <h2>ТС 14-101-928-2017</h2>
+              <p>Прокат стальной холоднокатаный горячеоцинкованный. Техническое соглашение.</p>
+            </article>
+
+            <article class="material-doc">
+              <h2>ТУ 14-1-4792-90</h2>
+              <p>Прокат холоднокатаный горячеоцинкованный с органическим покрытием.</p>
+            </article>
+
+            <article class="material-doc">
+              <h2>ТУ 14-101-584-2012</h2>
+              <p>Прокат тонколистовой холоднокатаный горячеоцинкованный. Технические условия.</p>
+            </article>
+
+            <article class="material-doc">
+              <h2>ТУ 14-106-438-2002</h2>
+              <p>Прокат стальной тонколистовой холоднокатаный горячеоцинкованный с непрерывных линий. Технические условия.</p>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section class="calculator-workspace gradient" aria-label="Параметры металлопроката">
-        <div class="calculator-workspace__inner">
-          <form id="calculator-form" class="calculator-form">
-            <label for="calc-category">Категория
-              <select id="calc-category" name="category"><option>Металлопрокат</option><option>Трубопроводная арматура</option><option>Химическая продукция</option></select>
-            </label>
-            <label for="calc-product">Материал/Товар
-              <input id="calc-product" name="product" value="Лист ПВ" maxlength="100" />
-            </label>
-            <div class="calculator-form__columns">
-              <label for="calc-type">Тип<input id="calc-type" name="type" value="508" maxlength="60" /></label>
-              <label for="calc-gost">ГОСТ / ТУ<input id="calc-gost" name="gost" value="ГОСТ 8706-78" maxlength="100" /></label>
-              <label class="calculator-measure" for="calc-tonnes"><span class="visually-hidden">Тонны</span><input id="calc-tonnes" name="tonnes" type="number" min="0" step="any" placeholder="0" /><span>Тонны</span></label>
-              <label class="calculator-measure" for="calc-area"><span class="visually-hidden">Квадратные метры</span><input id="calc-area" name="area" type="number" min="0" step="any" placeholder="0" /><span>Кв. метры</span></label>
-              <label class="calculator-measure" for="calc-quantity"><span class="visually-hidden">Количество штук</span><input id="calc-quantity" name="quantity" type="number" min="0" step="1" placeholder="0" /><span>Кол-во шт.</span></label>
-              <label class="calculator-measure" for="calc-width"><span class="visually-hidden">Ширина в метрах</span><input id="calc-width" name="width" type="number" min="0" step="any" placeholder="0" /><span>Ширина, м</span></label>
-              <label class="calculator-measure" for="calc-length"><span class="visually-hidden">Длина в метрах</span><input id="calc-length" name="length" type="number" min="0" step="any" placeholder="0" /><span>Длина, м</span></label>
-            </div>
-          </form>
-          <aside class="calculator-result" aria-label="Ориентировочная цена">
-            <div class="calculator-price">
-              <p><span data-product-name>Лист ПВ 508</span></p>
-              <strong>от 45000 руб./т</strong>
-              <a href="#request">Обговорить цены</a>
-            </div>
-            <a class="calculator-gost-link" data-material-link href="material.html">ГОСТы и ТУ на “материал”</a>
-          </aside>
-        </div>
-      </section>
-
-      <section id="request" class="calculator-request request gradient" aria-labelledby="request-title">
+      <section id="request" class="request gradient material-request" aria-labelledby="request-title">
         <div class="container request__grid">
           <div class="request__copy">
             <p class="eyebrow">Надёжность с первой минуты</p>
             <h2 id="request-title">Готовы обсудить ваш <em>заказ?</em></h2>
-            <p>Выбирая ООО «Велес Сталь», вы получаете надёжного партнёра, готового предложить комплексные решения для ваших производственных задач.</p>
+            <p>
+              Выбирая ООО «Велес Сталь», вы получаете надёжного партнёра,
+              готового предложить комплексные решения для ваших производственных задач.
+            </p>
+
             <div class="request__contacts">
-              <a href="tel:+79999999999">☎ +7 999 999 99 99</a>
-              <a href="mailto:writeyourmail@gmail.com">✉ writeyourmail@gmail.com</a>
+              <a class="contact-line" href="tel:+79999999999">
+                <img class="material-contact-icon" src="assets/icon-phone.svg" alt="" />
+                +7 999 999 99 99
+              </a>
+              <a class="contact-line" href="mailto:writeyourmail@gmail.com">
+                <img class="material-contact-icon" src="assets/icon-mail.svg" alt="" />
+                writeyourmail@gmail.com
+              </a>
             </div>
           </div>
+
           <form id="request-form" class="request-form">
             <label for="name">Фамилия Имя<input id="name" name="name" autocomplete="name" placeholder="Иванов Иван" required maxlength="100" /></label>
             <label for="phone">Номер телефона<input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+7 999 999 99 99" required minlength="10" maxlength="30" /></label>
             <label for="email">Почта<input id="email" name="email" type="email" autocomplete="email" placeholder="writeyourmail@gmail.com" required maxlength="160" /></label>
             <label for="order">Заказ<input id="order" name="order" placeholder="Напишите ваш заказ" required maxlength="500" /></label>
             <label for="note">Примечание<textarea id="note" name="note" rows="3" placeholder="Примечание к заказу" maxlength="2000"></textarea></label>
-            <p class="form-note">Демонстрационная форма. Данные не отправляются.</p>
+            <p class="form-note">*Ваши данные конфиденциальны. Мы перезвоним в течение 1 рабочего часа</p>
             <button class="button" type="submit">Отправить</button>
             <p id="form-status" class="form-status" role="status" aria-live="polite" hidden></p>
           </form>

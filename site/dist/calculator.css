@@ -122,6 +122,21 @@
 .calculator-gost-link {
   display: block;
   padding: 24px 30px;
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .calculator-gost-link:hover {
+    background: #1154ed;
+    border-color: #1154ed;
+    color: #fff;
+    text-decoration: none;
+    transform: translateY(-2px);
+  }
 }
 .calculator-price a:hover,
 .calculator-gost-link:hover {

@@ -1,0 +1,255 @@
+.material-page .navigation [aria-current="page"] {
+  color: var(--blue);
+}
+
+.material-contact-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  flex: none;
+}
+
+.material-container {
+  width: min(1720px, calc(100% - 200px));
+  margin-inline: auto;
+}
+
+.material-standards-page {
+  padding: 105px 0 315px;
+}
+
+.material-standards-page h1 {
+  margin: 0;
+  max-width: 1200px;
+  font-size: 64px;
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+.material-docs {
+  width: min(100%, 1040px);
+  margin-top: 84px;
+  display: grid;
+  gap: 28px;
+}
+
+.material-doc h2 {
+  margin: 0;
+  color: #100e35;
+  font-size: 30px;
+  line-height: 1.15;
+  font-weight: 600;
+}
+
+.material-doc--accent h2 {
+  color: #1154ed;
+}
+
+.material-doc p {
+  max-width: 980px;
+  margin-top: 7px;
+  color: #100e35;
+  font-size: 17px;
+  line-height: 1.25;
+}
+
+.material-request {
+  margin-top: 0;
+  border-radius: 100px 100px 0 0;
+}
+
+.material-footer {
+  margin-top: 0;
+}
+
+.material-footer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.material-footer-link img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.material-footer-credits {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1.25fr;
+  gap: 55px;
+  min-height: 175px;
+  align-items: start;
+  font-size: 13px;
+  line-height: 1.45;
+  color: #100e35;
+}
+
+.material-footer-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+  align-items: end;
+  padding-top: 25px;
+  font-size: 14px;
+  color: #555c6e;
+}
+
+.material-footer-bottom span:nth-child(2) {
+  text-align: center;
+}
+
+.material-footer-bottom a {
+  text-align: right;
+  text-decoration: underline;
+}
+
+@media (min-width: 1101px) {
+  .material-request {
+    padding: 82px 0 160px;
+  }
+
+  .material-request .request-form {
+    min-height: 1000px;
+  }
+
+  .material-footer {
+    padding: 105px 0 54px;
+    min-height: 1500px;
+  }
+
+  .material-footer-credits {
+    margin-top: 120px;
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .material-container {
+    width: calc(100% - 80px);
+  }
+
+  .material-standards-page {
+    padding: 80px 0 130px;
+  }
+
+  .material-standards-page h1 {
+    font-size: clamp(44px, 7vw, 58px);
+  }
+
+  .material-docs {
+    width: 100%;
+    margin-top: 64px;
+    gap: 24px;
+  }
+
+  .material-doc h2 {
+    font-size: 26px;
+  }
+
+  .material-doc p {
+    font-size: 16px;
+  }
+
+  .material-request {
+    border-radius: 64px 64px 0 0;
+  }
+
+  .material-footer-credits {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    min-height: 130px;
+  }
+
+  .material-footer-credits > div:first-child {
+    display: none;
+  }
+
+  .material-footer-bottom {
+    grid-template-columns: 1fr 1fr;
+    font-size: 12px;
+  }
+
+  .material-footer-bottom span:nth-child(2) {
+    text-align: right;
+  }
+
+  .material-footer-bottom a {
+    grid-column: 1 / -1;
+    text-align: left;
+  }
+}
+
+@media (max-width: 700px) {
+  .material-container {
+    width: calc(100% - 32px);
+  }
+
+  .material-standards-page {
+    padding: 56px 0 88px;
+  }
+
+  .material-standards-page h1 {
+    font-size: 31px;
+    line-height: 1.12;
+  }
+
+  .material-docs {
+    margin-top: 44px;
+    gap: 24px;
+  }
+
+  .material-doc h2 {
+    font-size: 20px;
+  }
+
+  .material-doc p {
+    margin-top: 5px;
+    font-size: 13px;
+  }
+
+  .material-request {
+    border-radius: 40px 40px 0 0;
+  }
+
+  .material-footer-credits {
+    display: block;
+    min-height: 0;
+    padding-bottom: 34px;
+    font-size: 9px;
+  }
+
+  .material-footer-bottom {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    font-size: 9px;
+  }
+
+  .material-footer-bottom span:nth-child(2),
+  .material-footer-bottom a {
+    text-align: left;
+  }
+}
+
+@media (max-width: 420px) {
+  .material-standards-page {
+    padding-top: 44px;
+  }
+
+  .material-standards-page h1 {
+    font-size: 28px;
+  }
+
+  .material-docs {
+    margin-top: 38px;
+    gap: 22px;
+  }
+
+  .material-doc h2 {
+    font-size: 18px;
+  }
+
+  .material-doc p {
+    font-size: 12px;
+  }
+}

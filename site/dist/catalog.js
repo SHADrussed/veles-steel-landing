@@ -191,6 +191,13 @@ function createCard(product) {
   const article = document.createElement('article');
   article.className = 'catalog-card';
 
+  const activateCard = () => openProduct(product);
+
+  article.addEventListener('click', (event) => {
+    if (event.target.closest('.catalog-card__action')) return;
+    activateCard();
+  });
+
   const heading = document.createElement('h2');
   heading.textContent = product.name;
 
@@ -202,7 +209,7 @@ function createCard(product) {
   action.className = 'catalog-card__action';
   action.type = 'button';
   action.textContent = 'Уточнить наличие';
-  action.addEventListener('click', () => openProduct(product));
+  action.addEventListener('click', activateCard);
 
   article.append(heading, meta, action);
   return article;
