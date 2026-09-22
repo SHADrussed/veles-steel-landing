@@ -787,7 +787,7 @@ h1 {
     gap: 20px;
     font-size: 20px;
   }
-  .header__cta {
+  .header__cta.button {
     min-width: 308px;
     min-height: 72px;
     border-radius: 20px;
