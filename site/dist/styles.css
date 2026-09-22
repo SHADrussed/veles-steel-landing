@@ -424,7 +424,7 @@ h1 {
   scroll-snap-type: x proximity;
 }
 .product {
-  background: #eaf2ff;
+  background: var(--pale);
   border-radius: 18px;
   padding: 30px 28px 0;
   min-height: 430px;
@@ -916,6 +916,29 @@ h1 {
 @media (min-width: 1101px) and (max-width: 1600px) {
   .header__contacts {
     display: none;
+  }
+}
+
+@media (min-width: 1101px) and (max-width: 1350px) {
+  .header__inner {
+    gap: 16px;
+  }
+
+  .brand img {
+    width: 76px;
+    height: 68px;
+  }
+
+  .navigation {
+    gap: 20px;
+    font-size: 16px;
+  }
+
+  .header__cta.button {
+    min-width: 220px;
+    min-height: 60px;
+    padding-inline: 18px;
+    font-size: 22px;
   }
 }
 
