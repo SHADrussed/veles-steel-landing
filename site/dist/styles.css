@@ -11,6 +11,7 @@
   --white: #fff;
   --radius: 34px;
   --page: 1500px;
+  --hover: var(--blue-dark);
   font-family: "Involve", Manrope, "Century Gothic", Arial, sans-serif;
   color: var(--ink);
   font-size: 16px;
@@ -487,12 +488,14 @@ h1 {
   font-size: 16px;
   z-index: 2;
 }
+
 .benefits__grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-template-areas: "tall top top" "tall middle middle" "wide wide flex";
   gap: 16px;
 }
+
 .benefits__pair {
   display: grid;
   min-width: 0;
@@ -719,10 +722,18 @@ h1 {
   .benefits__pair {
     display: contents;
   }
-  .benefit--assortment { grid-area: assortment; }
-  .benefit--price { grid-area: price; }
-  .benefit--delivery { grid-area: delivery; }
-  .benefit--quality { grid-area: quality; }
+  .benefit--assortment {
+    grid-area: assortment;
+  }
+  .benefit--price {
+    grid-area: price;
+  }
+  .benefit--delivery {
+    grid-area: delivery;
+  }
+  .benefit--quality {
+    grid-area: quality;
+  }
   .benefit--tall {
     min-height: 456px;
   }
@@ -1170,13 +1181,28 @@ h1 {
     grid-template-areas: "tall assortment" "tall price" "delivery quality" "flex flex" "wide wide";
     gap: 20px;
   }
-  .benefit--tall { grid-area: tall; min-height: 500px; }
-  .benefit--assortment { grid-area: assortment; }
-  .benefit--price { grid-area: price; }
-  .benefit--delivery { grid-area: delivery; }
-  .benefit--quality { grid-area: quality; }
-  .benefit--flex { grid-area: flex; }
-  .benefit--wide { grid-area: wide; }
+  .benefit--tall {
+    grid-area: tall;
+    min-height: 500px;
+  }
+  .benefit--assortment {
+    grid-area: assortment;
+  }
+  .benefit--price {
+    grid-area: price;
+  }
+  .benefit--delivery {
+    grid-area: delivery;
+  }
+  .benefit--quality {
+    grid-area: quality;
+  }
+  .benefit--flex {
+    grid-area: flex;
+  }
+  .benefit--wide {
+    grid-area: wide;
+  }
   .benefit {
     min-height: 290px;
     padding: 24px;

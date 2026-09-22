@@ -1,0 +1,38 @@
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="144.000000" height="144.000000" fill="none">
+	<defs>
+		<g id="pixso_custom_effect_46">
+			<effect x="2.786777" y="2.786777" visibility="visible" fill="rgb(17,84,237)" fill-opacity="0.400000006" effectType="dropShadow" stdDeviation="5.57355404" radius="0" />
+		</g>
+		<filter id="filter_46" width="122.758789" height="118.941895" x="20.721924" y="0.000000" filterUnits="userSpaceOnUse" customEffect="url(#pixso_custom_effect_46)" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix" />
+			<feOffset dx="2.786777" dy="2.786777" in="SourceAlpha" />
+			<feGaussianBlur stdDeviation="1.85785139" />
+			<feColorMatrix type="matrix" values="0 0 0 0 0.0666667 0 0 0 0 0.329412 0 0 0 0 0.929412 0 0 0 0.4 0 " />
+			<feBlend result="effect_dropShadow_1" in2="BackgroundImageFix" mode="normal" />
+			<feBlend result="shape" in="SourceGraphic" in2="effect_dropShadow_1" mode="normal" />
+		</filter>
+		<g id="pixso_custom_effect_47">
+			<effect x="2.786777" y="3.483471" visibility="visible" fill="rgb(255,255,255)" fill-opacity="0.25" effectType="dropShadow" stdDeviation="2.78677702" radius="0" />
+		</g>
+		<filter id="filter_47" width="74.697266" height="103.582886" x="15.000000" y="23.687378" filterUnits="userSpaceOnUse" customEffect="url(#pixso_custom_effect_47)" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix" />
+			<feColorMatrix result="hardAlpha" in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1.25 0 " />
+			<feOffset dx="2.786777" dy="3.483471" in="hardAlpha" />
+			<feGaussianBlur stdDeviation="0.928925693" />
+			<feComposite k2="-1" k3="1" in2="hardAlpha" operator="out" />
+			<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0 " />
+			<feBlend result="effect_dropShadow_1" in2="BackgroundImageFix" mode="normal" />
+			<feBlend result="shape" in="SourceGraphic" in2="effect_dropShadow_1" mode="normal" />
+		</filter>
+	</defs>
+	<rect id="icon-Own production" width="144.000000" height="144.000000" x="0.000000" y="0.000000" fill="rgb(255,255,255)" fill-opacity="0" />
+	<g id="Group 10">
+		<g filter="url(#filter_46)">
+			<path id="Vector 17" d="M14.6279 15.1007C37.6188 -11.3736 38.3155 2.21242 56.4316 16.1477C56.4316 16.1477 63.3985 21.723 66.882 26.2497C69.9618 30.2518 68.9721 39.8352 68.9721 39.8352C68.9721 50.0534 68.9721 72.9282 68.9721 82.6819C68.9721 92.4357 65.1402 96.9641 56.4316 97.3125C48.0712 96.9641 27.8922 97.3125 13.9332 97.3125C-0.000667572 97.3125 0.696026 90.3456 0.696026 84.772C0.696026 84.772 1.39339 77.8747 8.18095e-08 47.4988C8.18095e-08 47.4988 -0.00216246 33.2185 0.696694 28.69C1.39555 24.1615 5.91918 21.7193 5.91918 21.7193L14.6279 15.1007Z" fill="rgb(17,84,237)" fill-rule="evenodd" transform="matrix(0.62522,-0.780449,0.780449,0.62522,20.7222,53.9475)" />
+		</g>
+		<g opacity="0.800000012" filter="url(#filter_47)">
+			<path id="Vector 16" d="M29.6279 38.7882C52.6188 12.3139 53.3155 25.8999 71.4316 39.8352C71.4316 39.8352 78.3985 45.4105 81.882 49.9372C84.9618 53.9393 83.9721 63.5227 83.9721 63.5227C83.9721 73.7409 83.9721 96.6157 83.9721 106.369C83.9721 116.123 80.1402 120.652 71.4316 121C63.0712 120.652 42.8922 121 28.9332 121C14.9993 121 15.696 114.033 15.696 108.46C15.696 108.46 16.3934 101.562 15 71.1863C15 71.1863 14.9978 56.906 15.6967 52.3775C16.3956 47.849 20.9192 45.4068 20.9192 45.4068L29.6279 38.7882Z" fill="rgb(223,234,255)" fill-rule="evenodd" />
+		</g>
+		<circle id="Ellipse 182" cx="48.4427795" cy="31.3509808" r="4.87685966" fill="rgb(255,255,255)" />
+	</g>
+</svg>
