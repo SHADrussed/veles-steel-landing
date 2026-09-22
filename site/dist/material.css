@@ -4,7 +4,7 @@
 }
 
 .material-hero {
-  padding: 110px 0 90px;
+  padding: 98px 0 86px;
 }
 
 .material-back {
@@ -12,23 +12,26 @@
   color: #1154ed;
   font-size: 20px;
   line-height: 1.2;
-  margin-bottom: 52px;
+  margin-bottom: 54px;
 }
 
 .material-eyebrow {
   color: #777a8d;
   font-size: 20px;
-  margin-bottom: 18px;
+  line-height: 1.2;
+  margin-bottom: 24px;
 }
 
 .material-hero h1 {
-  max-width: 1200px;
+  max-width: 1240px;
+  margin: 0;
   font-size: 64px;
-  line-height: 1.2;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
 }
 
 .material-section {
-  padding: 20px 0 190px;
+  padding: 24px 0 190px;
 }
 
 .material-summary {
@@ -38,8 +41,8 @@
 }
 
 .material-summary article {
-  min-height: 190px;
-  padding: 28px;
+  height: 190px;
+  padding: 30px 28px 28px;
   border-radius: 20px;
   background: #dfeaff;
   display: flex;
@@ -50,6 +53,7 @@
 .material-summary span {
   color: #777a8d;
   font-size: 18px;
+  line-height: 1.2;
 }
 
 .material-summary strong {
@@ -57,6 +61,7 @@
   font-size: 36px;
   line-height: 1.2;
   font-weight: 600;
+  letter-spacing: -0.01em;
 }
 
 .material-standards {
@@ -64,8 +69,10 @@
 }
 
 .material-standards h2 {
-  margin-bottom: 48px;
+  margin: 0 0 44px;
   font-size: 48px;
+  line-height: 1.15;
+  font-weight: 600;
 }
 
 .material-standard-list {
@@ -75,7 +82,7 @@
 
 .material-standard {
   min-height: 112px;
-  padding: 24px 28px;
+  padding: 22px 28px;
   border-radius: 20px;
   background: #dfeaff;
   display: grid;
@@ -87,7 +94,7 @@
 .material-standard strong {
   color: #100e35;
   font-size: 28px;
-  line-height: 1.2;
+  line-height: 1.15;
   font-weight: 600;
 }
 
@@ -95,12 +102,13 @@
   margin-top: 8px;
   color: #777a8d;
   font-size: 16px;
+  line-height: 1.2;
 }
 
 .material-standard a {
-  min-width: 185px;
-  min-height: 56px;
-  padding: 12px 18px;
+  width: 200px;
+  min-height: 52px;
+  padding: 10px 18px;
   border-radius: 18px;
   display: inline-flex;
   align-items: center;
@@ -108,6 +116,7 @@
   background: #1154ed;
   color: #fff;
   font-size: 18px;
+  line-height: 1.2;
 }
 
 .material-request {
