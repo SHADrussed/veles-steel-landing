@@ -411,3 +411,16 @@
     font-size: 15px;
   }
 }
+
+
+@media (hover: none), (pointer: coarse) {
+  .catalog-card__action {
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+  }
+
+  .catalog-card__meta {
+    opacity: 0;
+  }
+}
