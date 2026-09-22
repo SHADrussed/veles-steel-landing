@@ -190,6 +190,22 @@ function openProduct(product) {
 function createCard(product) {
   const article = document.createElement('article');
   article.className = 'catalog-card';
+  article.tabIndex = 0;
+  article.setAttribute('role', 'link');
+  article.setAttribute('aria-label', `Открыть: ${product.name}`);
+
+  const activateCard = () => openProduct(product);
+
+  article.addEventListener('click', (event) => {
+    if (event.target.closest('.catalog-card__action')) return;
+    activateCard();
+  });
+
+  article.addEventListener('keydown', (event) => {
+    if (event.key !== 'Enter' && event.key !== ' ') return;
+    event.preventDefault();
+    activateCard();
+  });
 
   const heading = document.createElement('h2');
   heading.textContent = product.name;
@@ -202,7 +218,7 @@ function createCard(product) {
   action.className = 'catalog-card__action';
   action.type = 'button';
   action.textContent = 'Уточнить наличие';
-  action.addEventListener('click', () => openProduct(product));
+  action.addEventListener('click', activateCard);
 
   article.append(heading, meta, action);
   return article;
