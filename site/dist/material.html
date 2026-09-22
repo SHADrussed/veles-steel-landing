@@ -6,44 +6,116 @@
     <meta name="theme-color" content="#1154ed" />
     <meta
       name="description"
-      content="ГОСТы и ТУ на выбранный материал — Велес Сталь."
+      content="ГОСТы и ТУ на металлопрокат — Велес Сталь."
     />
     <title>ГОСТы и ТУ — Велес Сталь</title>
     <link rel="stylesheet" href="styles.css?v=9" />
-    <link rel="stylesheet" href="material.css?v=4" />
+    <link rel="stylesheet" href="material.css?v=5" />
     <script src="app.js?v=3" defer></script>
-    <script src="material.js?v=2" defer></script>
+    <script src="material.js?v=3" defer></script>
   </head>
   <body class="material-page">
     <a class="skip-link" href="#main">Перейти к содержимому</a>
 
+    <header class="header">
+      <div class="container header__inner">
+        <a class="brand" href="index.html#main" aria-label="Велес Сталь — главная">
+          <img src="assets/logo-mark.png" alt="" />
+          <span class="visually-hidden">Велес Сталь</span>
+        </a>
 
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-controls="navigation"
+          aria-expanded="false"
+          aria-label="Открыть меню"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav id="navigation" class="navigation" aria-label="Основная навигация">
+          <a href="catalog.html">Каталог</a>
+          <a href="calculator.html" aria-current="page">Калькулятор металлопроката</a>
+          <a href="about.html">О компании</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+
+        <div class="header__contacts">
+          <a class="contact-line" href="tel:+79999999999">
+            <img class="material-contact-icon" src="assets/icon-phone.svg" alt="" />
+            +7 999 999 99 99
+          </a>
+          <a class="contact-line" href="mailto:writeyourmail@gmail.com">
+            <img class="material-contact-icon" src="assets/icon-mail.svg" alt="" />
+            writeyourmail@gmail.com
+          </a>
+        </div>
+
+        <a class="button header__cta" href="#request">Оставить заявку</a>
+      </div>
+    </header>
 
     <main id="main">
-      <section class="material-hero">
+      <section class="material-standards-page" aria-labelledby="material-title">
         <div class="material-container">
-          <a class="material-back" href="calculator.html">← Назад к калькулятору</a>
-          <p class="material-eyebrow">Документация на материал</p>
-          <h1>ГОСТы и ТУ на <em data-material-title>материал</em></h1>
-        </div>
-      </section>
+          <h1 id="material-title">
+            ГОСТы и ТУ на <em>“<span data-material-title>материал</span>”</em>
+          </h1>
 
-      <section class="material-section">
-        <div class="material-container">
-          <div class="material-summary">
-            <article>
-              <span>Материал</span>
-              <strong data-material-name>Материал</strong>
+          <div class="material-docs">
+            <article class="material-doc material-doc--accent">
+              <h2>ГОСТ 9045-93</h2>
+              <p>Прокат тонколистовой холоднокатаный из низкоуглеродистой качественной стали для холодной штамповки. Технические условия.</p>
             </article>
-            <article>
-              <span>Тип</span>
-              <strong data-material-type>—</strong>
-            </article>
-          </div>
 
-          <div class="material-standards">
-            <h2>Стандарты</h2>
-            <div class="material-standard-list" data-standard-list></div>
+            <article class="material-doc material-doc--accent">
+              <h2>ГОСТ 14918-2020 (80)</h2>
+              <p>Прокат листовой горячеоцинкованный. Технические условия.</p>
+            </article>
+
+            <article class="material-doc material-doc--accent">
+              <h2>ГОСТ 19904-90 (74)</h2>
+              <p>Прокат листовой холоднокатаный. Сортамент.</p>
+            </article>
+
+            <article class="material-doc">
+              <h2>СТО 16052861-001-2020</h2>
+              <p>Профили стальные листовые гнутые для строительства.</p>
+            </article>
+
+            <article class="material-doc">
+              <h2>СТО 17052861-002-2025</h2>
+            </article>
+
+            <article class="material-doc">
+              <h2>СТО ММК 401-2020</h2>
+            </article>
+
+            <article class="material-doc material-doc--accent">
+              <h2>ТС 14-101-658-2012</h2>
+              <p>Прокат тонколистовой холоднокатаный горячеоцинкованный. Техническое соглашение.</p>
+            </article>
+
+            <article class="material-doc">
+              <h2>ТС 14-101-928-2017</h2>
+              <p>Прокат стальной холоднокатаный горячеоцинкованный. Техническое соглашение.</p>
+            </article>
+
+            <article class="material-doc">
+              <h2>ТУ 14-1-4792-90</h2>
+              <p>Прокат холоднокатаный горячеоцинкованный с органическим покрытием.</p>
+            </article>
+
+            <article class="material-doc">
+              <h2>ТУ 14-101-584-2012</h2>
+              <p>Прокат тонколистовой холоднокатаный горячеоцинкованный. Технические условия.</p>
+            </article>
+
+            <article class="material-doc">
+              <h2>ТУ 14-106-438-2002</h2>
+              <p>Прокат стальной тонколистовой холоднокатаный горячеоцинкованный с непрерывных линий. Технические условия.</p>
+            </article>
           </div>
         </div>
       </section>
@@ -52,11 +124,21 @@
         <div class="container request__grid">
           <div class="request__copy">
             <p class="eyebrow">Надёжность с первой минуты</p>
-            <h2 id="request-title">Нужна помощь с <em>документацией?</em></h2>
-            <p>Оставьте заявку — уточним требуемый ГОСТ или ТУ и подберём подходящий материал под задачу.</p>
+            <h2 id="request-title">Готовы обсудить ваш <em>заказ?</em></h2>
+            <p>
+              Выбирая ООО «Велес Сталь», вы получаете надёжного партнёра,
+              готового предложить комплексные решения для ваших производственных задач.
+            </p>
+
             <div class="request__contacts">
-              <a href="tel:+79999999999">☎ +7 999 999 99 99</a>
-              <a href="mailto:writeyourmail@gmail.com">✉ writeyourmail@gmail.com</a>
+              <a class="contact-line" href="tel:+79999999999">
+                <img class="material-contact-icon" src="assets/icon-phone.svg" alt="" />
+                +7 999 999 99 99
+              </a>
+              <a class="contact-line" href="mailto:writeyourmail@gmail.com">
+                <img class="material-contact-icon" src="assets/icon-mail.svg" alt="" />
+                writeyourmail@gmail.com
+              </a>
             </div>
           </div>
 
@@ -64,7 +146,7 @@
             <label for="name">Фамилия Имя<input id="name" name="name" autocomplete="name" placeholder="Иванов Иван" required maxlength="100" /></label>
             <label for="phone">Номер телефона<input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+7 999 999 99 99" required minlength="10" maxlength="30" /></label>
             <label for="email">Почта<input id="email" name="email" type="email" autocomplete="email" placeholder="writeyourmail@gmail.com" required maxlength="160" /></label>
-            <label for="order">Заказ<input id="order" name="order" placeholder="Материал и стандарт" required maxlength="500" /></label>
+            <label for="order">Заказ<input id="order" name="order" placeholder="Напишите ваш заказ" required maxlength="500" /></label>
             <label for="note">Примечание<textarea id="note" name="note" rows="3" placeholder="Примечание к заказу" maxlength="2000"></textarea></label>
             <p class="form-note">*Ваши данные конфиденциальны. Мы перезвоним в течение 1 рабочего часа</p>
             <button class="button" type="submit">Отправить</button>
@@ -74,21 +156,29 @@
       </section>
     </main>
 
-    <footer id="contacts" class="footer gradient">
+    <footer id="contacts" class="footer gradient material-footer">
       <div class="container">
         <div class="footer__intro">
           <a class="brand brand--footer" href="index.html#main" aria-label="Велес Сталь — главная">
             <img src="assets/logo-mark.png" alt="" />
             <span class="visually-hidden">Велес Сталь</span>
           </a>
-          <p>Выбирая ООО «Велес Сталь», вы получаете надёжного партнёра, готового предложить комплексные решения для ваших производственных задач. Мы стремимся к долгосрочному сотрудничеству и готовы стать вашим основным поставщиком металлопроката.</p>
+          <p>
+            Выбирая ООО «Велес Сталь», вы получаете надёжного партнёра, готового предложить
+            комплексные решения для ваших производственных задач. Мы стремимся к долгосрочному
+            сотрудничеству и готовы стать вашим основным поставщиком металлопроката.
+          </p>
         </div>
 
         <div class="footer__grid">
           <div>
             <h3>Связаться с нами</h3>
-            <a href="tel:+79999999999">+7 999 999 99 99</a>
-            <a href="mailto:writeyourmail@gmail.com">writeyourmail@gmail.com</a>
+            <a class="material-footer-link" href="tel:+79999999999">
+              <img src="assets/icon-phone.svg" alt="" /> +7 999 999 99 99
+            </a>
+            <a class="material-footer-link" href="mailto:writeyourmail@gmail.com">
+              <img src="assets/icon-mail.svg" alt="" /> writeyourmail@gmail.com
+            </a>
             <small>Написать нам онлайн</small>
             <a href="#request">Telegram</a>
             <a href="#request">WhatsApp</a>
@@ -99,8 +189,8 @@
             <h3>Информация</h3>
             <a href="about.html">О компании</a>
             <a href="index.html#process">Как мы работаем</a>
-            <a href="catalog.html">Металлопрокат</a>
-            <a href="calculator.html">Калькулятор</a>
+            <a href="calculator.html">Калькулятор металлопроката</a>
+            <a href="catalog.html">Каталог</a>
             <a href="#request">Оставить заявку</a>
           </div>
 
@@ -109,14 +199,23 @@
             <a href="catalog.html?category=nonferrous">Цветной металлопрокат</a>
             <a href="catalog.html?category=black">Чёрный металлопрокат</a>
             <a href="catalog.html?category=pipes">Трубопроводная арматура</a>
-            <a href="catalog.html?category=chemical">Химическая продукция</a>
-            <a href="catalog.html?category=nonferrous">Специальные стали и сплавы</a>
+            <a href="catalog.html?category=nonferrous">Коммерческое предложение на специальные стали и сплавы</a>
           </div>
         </div>
 
-        <div class="footer__bottom">
+        <div class="material-footer-credits">
+          <div></div>
+          <p>
+            Image by freepik: Image by https://ru.freepik.com/author/freepik freepik<br />
+            Image by Nano Banana: https://nanobanana.mass-dir.ru/generate
+          </p>
+          <div></div>
+        </div>
+
+        <div class="material-footer-bottom">
           <span>© 2015–2026 Велес Сталь</span>
-          <a href="#main">Наверх ↑</a>
+          <span>Не является публичной офертой</span>
+          <a href="#main">Политика конфиденциальности</a>
         </div>
       </div>
     </footer>
