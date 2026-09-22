@@ -16,12 +16,21 @@ if (name) name.textContent = material;
 if (typeNode) typeNode.textContent = type;
 document.title = `ГОСТы и ТУ: ${material} — Велес Сталь`;
 
-const standards = [
-  {
-    name: gost,
+const standards = gost
+  .split(/[;,]+/)
+  .map((item) => item.trim())
+  .filter(Boolean)
+  .map((name) => ({
+    name,
     note: 'Стандарт, выбранный в калькуляторе.',
-  },
-];
+  }));
+
+if (!standards.length) {
+  standards.push({
+    name: 'Стандарт уточняется',
+    note: 'Оставьте заявку, чтобы уточнить применимый ГОСТ или ТУ.',
+  });
+}
 
 if (list) {
   list.innerHTML = '';
