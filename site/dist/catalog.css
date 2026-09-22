@@ -406,7 +406,7 @@
   }
 
   .catalog-table {
-    min-width: 760px;
+    min-width: 640px;
   }
 
   .catalog-table th,
@@ -423,11 +423,6 @@
 }
 
 
-.catalog-card[role="link"] {
+.catalog-card {
   cursor: pointer;
-}
-
-.catalog-card:focus-visible {
-  outline: 3px solid #1154ed;
-  outline-offset: 4px;
 }
