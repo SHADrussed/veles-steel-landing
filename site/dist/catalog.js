@@ -160,7 +160,13 @@ function createSubtabs(category) {
 
     button.addEventListener('click', () => {
       activeFilter = filter;
-      renderSubtabsAndCards();
+
+      if (activeProduct) {
+        activeProduct = null;
+        setUrl({ category: activeCategory });
+      }
+
+      render();
     });
 
     subtabsRoot.append(button);
