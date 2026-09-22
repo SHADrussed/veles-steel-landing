@@ -489,6 +489,36 @@ h1 {
   z-index: 2;
 }
 
+.product,
+.product h3,
+.product .tags li,
+.product__price {
+  transition:
+    background-color 200ms ease,
+    color 200ms ease,
+    border-color 200ms ease,
+    transform 200ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .product:hover {
+    background: #1154ed;
+    color: #fff;
+    transform: translateY(-3px);
+  }
+
+  .product:hover h3,
+  .product:hover .product__price {
+    color: #fff;
+  }
+
+  .product:hover .tags li {
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.92);
+    background: rgba(255, 255, 255, 0.08);
+  }
+}
+
 .benefits__grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
