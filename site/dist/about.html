@@ -3,195 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#1154ed" />
-    <meta
-      name="description"
-      content="О компании Велес Сталь — команда, подход к снабжению, преимущества и гарантии."
-    />
+    <meta name="theme-color" content="#dfeaff" />
+    <meta name="description" content="О компании Велес Сталь: поставки металлопроката, подбор продукции и логистика для предприятий." />
     <title>О компании — Велес Сталь</title>
     <link rel="stylesheet" href="styles.css?v=8" />
-    <link rel="stylesheet" href="about.css?v=2" />
+    <link rel="stylesheet" href="about.css?v=3" />
     <script src="app.js?v=3" defer></script>
   </head>
   <body class="about-page">
     <a class="skip-link" href="#main">Перейти к содержимому</a>
-
     <header class="header">
       <div class="container header__inner">
-        <a class="brand" href="index.html#main" aria-label="Велес Сталь — главная">
-          <img src="assets/logo-mark.png" alt="" />
-          <span class="visually-hidden">Велес Сталь</span>
-        </a>
-
-        <button
-          class="menu-toggle"
-          type="button"
-          aria-controls="navigation"
-          aria-expanded="false"
-          aria-label="Открыть меню"
-        >
-          <span></span><span></span><span></span>
-        </button>
-
-        <nav id="navigation" class="navigation" aria-label="Основная навигация">
-          <a href="catalog.html">Каталог</a>
-          <a href="calculator.html">Калькулятор металлопроката</a>
-          <a href="about.html" aria-current="page">О компании</a>
-          <a href="#contacts">Контакты</a>
-        </nav>
-
-        <div class="header__contacts">
-          <a class="contact-line contact-line--phone" href="tel:+79999999999">
-            <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path d="M7.2 3.5 9.9 3c.6-.1 1.1.2 1.3.8l1.1 3.1c.2.5 0 .9-.4 1.2L10.1 9.4a14.5 14.5 0 0 0 4.5 4.5l1.3-1.8c.3-.4.7-.6 1.2-.4l3.1 1.1c.6.2.9.7.8 1.3l-.5 2.7c-.1.7-.7 1.2-1.4 1.2C11 18 6 13 6 6.9c0-.7.5-1.3 1.2-1.4Z" />
-            </svg>
-            +7 999 999 99 99
-          </a>
-          <a class="contact-line contact-line--mail" href="mailto:writeyourmail@gmail.com">
-            <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path d="M3.5 5.5h17v13h-17zM4.3 6.4l7.7 6 7.7-6" />
-            </svg>
-            writeyourmail@gmail.com
-          </a>
-        </div>
-
+        <a class="brand" href="index.html#main" aria-label="Велес Сталь — главная"><img src="assets/logo-mark.png" alt="" /><span class="visually-hidden">Велес Сталь</span></a>
+        <button class="menu-toggle" type="button" aria-controls="navigation" aria-expanded="false" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+        <nav id="navigation" class="navigation" aria-label="Основная навигация"><a href="catalog.html">Каталог</a><a href="calculator.html">Калькулятор металлопроката</a><a href="about.html" aria-current="page">О компании</a><a href="index.html#contacts">Контакты</a></nav>
+        <div class="header__contacts"><a class="contact-line contact-line--phone" href="tel:+79999999999"><svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.2 3.5 9.9 3c.6-.1 1.1.2 1.3.8l1.1 3.1c.2.5 0 .9-.4 1.2L10.1 9.4a14.5 14.5 0 0 0 4.5 4.5l1.3-1.8c.3-.4.7-.6 1.2-.4l3.1 1.1c.6.2.9.7.8 1.3l-.5 2.7c-.1.7-.7 1.2-1.4 1.2C11 18 6 13 6 6.9c0-.7.5-1.3 1.2-1.4Z" /></svg>+7 999 999 99 99</a><a class="contact-line contact-line--mail" href="mailto:writeyourmail@gmail.com"><svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 5.5h17v13h-17zM4.3 6.4l7.7 6 7.7-6" /></svg>writeyourmail@gmail.com</a></div>
         <a class="button header__cta" href="#request">Оставить заявку</a>
       </div>
     </header>
-
     <main id="main">
-      <section class="about-hero">
-        <div class="about-page__container">
-          <p class="about-breadcrumb"><a href="index.html#main">Главная</a> / О компании</p>
-          <h1>О КОМПАНИИ</h1>
-
-          <div class="about-intro-grid">
-            <div class="about-gallery" aria-label="Производство и команда Велес Сталь">
-              <figure class="about-gallery__main"><img src="assets/about-real.jpg" alt="Обработка металлического листа на производстве" /></figure>
-              <figure class="about-gallery__side"><img src="assets/warehouse.jpg" alt="Металлопрокат на складе" /></figure>
-            </div>
-            <div class="about-intro">
-              <p class="about-intro__lead">Наша основная миссия — создавать качественные, современные и функциональные решения, подходящие для жизни и работы.</p>
-              <p>ООО «Велес Сталь» помогает предприятиям снабжаться металлопрокатом без лишних согласований и потери времени. Мы подбираем материал под задачу, проверяем документы и организуем поставку.</p>
-              <h2>НАШ ОПЫТ</h2>
-              <dl class="about-stats">
-                <div><dt>1000+</dt><dd>наименований</dd></div>
-                <div><dt>100%</dt><dd>проверка качества</dd></div>
-                <div><dt>24/7</dt><dd>на связи с клиентом</dd></div>
-                <div><dt>1 день</dt><dd>отгрузка со склада</dd></div>
-              </dl>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="about-team" aria-labelledby="about-team-title">
-        <div class="about-page__container">
-          <div class="about-team__heading">
-            <h2 id="about-team-title">КОМАНДА</h2>
-            <p>В «Велес Сталь» работают специалисты, которые понимают производство, логистику и реальные задачи снабжения. Мы говорим с клиентом на одном языке и отвечаем за результат на каждом этапе.</p>
-          </div>
-          <div class="team-grid">
-            <article class="team-card"><img src="assets/process-real.jpg" alt="Производственный цех" /><h3>Производство</h3><p>Подбираем решение под технические требования проекта.</p></article>
-            <article class="team-card"><img src="assets/hero-real.jpg" alt="Металлургическое производство" /><h3>Контроль качества</h3><p>Проверяем соответствие стандартам и сопроводительным документам.</p></article>
-            <article class="team-card"><img src="assets/laser.jpg" alt="Лазерная обработка металла" /><h3>Обработка</h3><p>Помогаем подготовить металл к дальнейшей работе.</p></article>
-            <article class="team-card"><img src="assets/warehouse.jpg" alt="Склад металлопроката" /><h3>Снабжение</h3><p>Организуем наличие, комплектацию и доставку заказа.</p></article>
-          </div>
-        </div>
-      </section>
-
-      <section class="about-values" aria-labelledby="about-values-title">
-        <div class="about-page__container">
-          <h2 id="about-values-title">ПОЧЕМУ <em>НАС</em> ВЫБИРАЮТ</h2>
-          <div class="about-values__grid">
-            <article><strong>01</strong><h3>Прозрачно</h3><p>Фиксируем параметры заказа и заранее проговариваем условия поставки.</p></article>
-            <article><strong>02</strong><h3>Точно</h3><p>Подбираем марку, размер и стандарт под задачу, а не по шаблону.</p></article>
-            <article><strong>03</strong><h3>Вовремя</h3><p>Согласуем логистику и держим связь до получения продукции.</p></article>
-          </div>
-        </div>
-      </section>
-
-      <section id="request" class="request gradient about-request" aria-labelledby="request-title">
-        <div class="container request__grid">
-          <div class="request__copy">
-            <p class="eyebrow">Надёжность с первой минуты</p>
-            <h2 id="request-title">Готовы обсудить ваш <em>заказ?</em></h2>
-            <p>Выбирая ООО «Велес Сталь», вы получаете надёжного партнёра, готового предложить комплексные решения для ваших производственных задач.</p>
-
-            <div class="request__contacts">
-              <a class="contact-line contact-line--phone" href="tel:+79999999999">
-                <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                  <path d="M7.2 3.5 9.9 3c.6-.1 1.1.2 1.3.8l1.1 3.1c.2.5 0 .9-.4 1.2L10.1 9.4a14.5 14.5 0 0 0 4.5 4.5l1.3-1.8c.3-.4.7-.6 1.2-.4l3.1 1.1c.6.2.9.7.8 1.3l-.5 2.7c-.1.7-.7 1.2-1.4 1.2C11 18 6 13 6 6.9c0-.7.5-1.3 1.2-1.4Z" />
-                </svg>
-                +7 999 999 99 99
-              </a>
-              <a class="contact-line contact-line--mail" href="mailto:writeyourmail@gmail.com">
-                <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                  <path d="M3.5 5.5h17v13h-17zM4.3 6.4l7.7 6 7.7-6" />
-                </svg>
-                writeyourmail@gmail.com
-              </a>
-            </div>
-          </div>
-
-          <form id="request-form" class="request-form">
-            <label for="name">Фамилия Имя<input id="name" name="name" autocomplete="name" placeholder="Иванов Иван" required maxlength="100" /></label>
-            <label for="phone">Номер телефона<input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+7 999 999 99 99" required minlength="10" maxlength="30" /></label>
-            <label for="email">Почта<input id="email" name="email" type="email" autocomplete="email" placeholder="writeyourmail@gmail.com" required maxlength="160" /></label>
-            <label for="order">Заказ<input id="order" name="order" placeholder="Напишите ваш заказ" required maxlength="500" /></label>
-            <label for="note">Примечание<textarea id="note" name="note" rows="3" placeholder="Примечание к заказу" maxlength="2000"></textarea></label>
-            <p class="form-note">*Ваши данные конфиденциальны. Мы перезвоним в течение 1 рабочего часа</p>
-            <button class="button" type="submit">Отправить</button>
-            <p id="form-status" class="form-status" role="status" aria-live="polite" hidden></p>
-          </form>
-        </div>
-      </section>
+      <section class="about-hero gradient" aria-labelledby="about-title"><div class="container about-hero__grid"><div class="about-hero__copy"><p class="eyebrow">Главная / О компании</p><h1 id="about-title">О компании <em>Велес Сталь</em></h1><p>Мы помогаем промышленным предприятиям находить нужный металлопрокат, согласовывать заказ и получать его в срок.</p><a class="button" href="#request">Обсудить задачу</a></div><div class="about-hero__image" role="img" aria-label="Металлопрокат на производстве"></div></div></section>
+      <section class="section container about-mission" aria-labelledby="mission-title"><div class="about-mission__media"><img src="assets/warehouse.jpg" alt="Склад металлопроката" /></div><div class="about-mission__copy"><h2 id="mission-title">Надёжность с <em>первой минуты</em></h2><p>Велес Сталь — прямой доступ к металлопрокату от производителей и понятная логистика без лишних согласований.</p><p>Мы подбираем материал под задачу, проверяем документы и остаёмся на связи до получения продукции.</p><dl class="about-stats"><div><dt>1000+</dt><dd>наименований</dd></div><div><dt>100%</dt><dd>проверка качества</dd></div><div><dt>24/7</dt><dd>на связи с клиентом</dd></div><div><dt>1 день</dt><dd>отгрузка со склада</dd></div></dl></div></section>
+      <section class="section about-process gradient" aria-labelledby="about-process-title"><div class="container"><h2 id="about-process-title">Как мы <em>работаем</em></h2><div class="about-process__grid"><article><strong>01</strong><h3>Слушаем задачу</h3><p>Уточняем характеристики, объём и сроки поставки.</p></article><article><strong>02</strong><h3>Подбираем решение</h3><p>Сверяем материал, размеры, ГОСТ и доступность.</p></article><article><strong>03</strong><h3>Организуем поставку</h3><p>Согласуем условия и доставляем заказ в нужное время.</p></article></div></div></section>
+      <section class="section container about-benefits" aria-labelledby="about-benefits-title"><h2 id="about-benefits-title">Почему с нами <em>работают</em></h2><div class="about-benefits__grid"><article><span>01</span><h3>Широкий ассортимент</h3><p>Металлопрокат для производственных и строительных задач.</p></article><article><span>02</span><h3>Конкурентные цены</h3><p>Находим оптимальный вариант под бюджет и требования проекта.</p></article><article><span>03</span><h3>Контроль качества</h3><p>Проверяем сопроводительные документы и соответствие стандартам.</p></article><article><span>04</span><h3>Оперативная доставка</h3><p>Помогаем согласовать комплектацию, наличие и логистику.</p></article></div></section>
+      <section id="request" class="section request gradient" aria-labelledby="request-title"><div class="container request__grid"><div class="request__copy"><p class="eyebrow">Надёжность с первой минуты</p><h2 id="request-title">Готовы обсудить ваш <em>заказ?</em></h2><p>Выбирая ООО «Велес Сталь», вы получаете надёжного партнёра для производственных задач.</p><div class="request__contacts"><a class="contact-line" href="tel:+79999999999">+7 999 999 99 99</a><a class="contact-line" href="mailto:writeyourmail@gmail.com">writeyourmail@gmail.com</a></div></div><form id="request-form" class="request-form"><label for="name">Фамилия Имя<input id="name" name="name" autocomplete="name" placeholder="Иванов Иван" required maxlength="100" /></label><label for="phone">Номер телефона<input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+7 999 999 99 99" required minlength="10" maxlength="30" /></label><label for="email">Почта<input id="email" name="email" type="email" autocomplete="email" placeholder="writeyourmail@gmail.com" required maxlength="160" /></label><label for="order">Заказ<input id="order" name="order" placeholder="Напишите ваш заказ" required maxlength="500" /></label><label for="note">Примечание<textarea id="note" name="note" rows="3" placeholder="Примечание к заказу" maxlength="2000"></textarea></label><p class="form-note">Демонстрационная форма. Данные не отправляются.</p><button class="button" type="submit">Отправить</button><p id="form-status" class="form-status" role="status" aria-live="polite" hidden></p></form></div></section>
     </main>
-
-    <footer id="contacts" class="footer gradient">
-      <div class="container">
-        <div class="footer__intro">
-          <a class="brand brand--footer" href="index.html#main" aria-label="Велес Сталь — главная">
-            <img src="assets/logo-mark.png" alt="" />
-            <span class="visually-hidden">Велес Сталь</span>
-          </a>
-          <p>Выбирая ООО «Велес Сталь», вы получаете надёжного партнёра, готового предложить комплексные решения для ваших производственных задач. Мы стремимся к долгосрочному сотрудничеству и готовы стать вашим основным поставщиком металлопроката.</p>
-        </div>
-
-        <div class="footer__grid">
-          <div>
-            <h3>Связаться с нами</h3>
-            <a href="tel:+79999999999">+7 999 999 99 99</a>
-            <a href="mailto:writeyourmail@gmail.com">writeyourmail@gmail.com</a>
-            <small>Написать нам онлайн</small>
-            <a href="#request">Telegram</a>
-            <a href="#request">WhatsApp</a>
-            <a href="#request">ВКонтакте</a>
-          </div>
-
-          <div>
-            <h3>Информация</h3>
-            <a href="about.html">О компании</a>
-            <a href="index.html#process">Как мы работаем</a>
-            <a href="calculator.html">Калькулятор</a>
-            <a href="catalog.html">Каталог</a>
-            <a href="#request">Оставить заявку</a>
-          </div>
-
-          <div>
-            <h3>Каталог продукции</h3>
-            <a href="catalog.html?category=nonferrous">Цветной металлопрокат</a>
-            <a href="catalog.html?category=black">Чёрный металлопрокат</a>
-            <a href="catalog.html?category=pipes">Трубопроводная арматура</a>
-            <a href="catalog.html?category=nonferrous">Специальные стали и сплавы</a>
-          </div>
-        </div>
-
-        <div class="footer__bottom">
-          <span>© 2015–2026 Велес Сталь</span>
-          <a href="#main">Наверх ↑</a>
-        </div>
-      </div>
-    </footer>
+    <footer id="contacts" class="footer gradient"><div class="container"><div class="footer__intro"><a class="brand brand--footer" href="index.html#main" aria-label="Велес Сталь — главная"><img src="assets/logo-mark.png" alt="" /><span class="visually-hidden">Велес Сталь</span></a><p>Надёжный партнёр по металлопрокату, подбору продукции и организации поставки.</p></div><div class="footer__grid"><div><h3>Связаться с нами</h3><a href="tel:+79999999999">+7 999 999 99 99</a><a href="mailto:writeyourmail@gmail.com">writeyourmail@gmail.com</a><small>Написать нам онлайн</small><a href="#request">Telegram</a><a href="#request">WhatsApp</a><a href="#request">ВКонтакте</a></div><div><h3>Информация</h3><a href="about.html">О компании</a><a href="index.html#process">Как мы работаем</a><a href="catalog.html">Металлопрокат</a><a href="calculator.html">Калькулятор</a><a href="#request">Оставить заявку</a></div><div><h3>Каталог продукции</h3><a href="catalog.html?category=nonferrous">Цветной металлопрокат</a><a href="catalog.html?category=black">Чёрный металлопрокат</a><a href="catalog.html?category=pipes">Трубопроводная арматура</a><a href="catalog.html?category=chemical">Химическая продукция</a></div></div><div class="footer__bottom"><span>© 2015–2026 Велес Сталь</span><a href="#main">Наверх ↑</a></div></div></footer>
   </body>
 </html>
