@@ -10,7 +10,7 @@
     />
     <title>О компании — Велес Сталь</title>
     <link rel="stylesheet" href="styles.css?v=8" />
-    <link rel="stylesheet" href="about.css?v=1" />
+    <link rel="stylesheet" href="about.css?v=2" />
     <script src="app.js?v=3" defer></script>
   </head>
   <body class="about-page">
@@ -62,103 +62,51 @@
     <main id="main">
       <section class="about-hero">
         <div class="about-page__container">
-          <h1>
-            Команда <em>профессионалов</em> для вашего <em>производства</em>
-          </h1>
+          <p class="about-breadcrumb"><a href="index.html#main">Главная</a> / О компании</p>
+          <h1>О КОМПАНИИ</h1>
 
-          <div class="about-intro">
-            <p>
-              <strong>ООО «Велес Сталь»</strong> — это динамично развивающаяся компания,
-              специализирующаяся на производстве, обработке и комплексной реализации
-              металлопроката для предприятий различных отраслей промышленности: от
-              машиностроения до крупного строительства.
-            </p>
-
-            <div class="about-intro__columns">
-              <p>Находим оптимальное техническое и ценовое решение под ваш конкретный запрос</p>
-              <p>Надежный и гибкий партнер, который упрощает процесс снабжения</p>
+          <div class="about-intro-grid">
+            <div class="about-gallery" aria-label="Производство и команда Велес Сталь">
+              <figure class="about-gallery__main"><img src="assets/about-real.jpg" alt="Обработка металлического листа на производстве" /></figure>
+              <figure class="about-gallery__side"><img src="assets/warehouse.jpg" alt="Металлопрокат на складе" /></figure>
+            </div>
+            <div class="about-intro">
+              <p class="about-intro__lead">Наша основная миссия — создавать качественные, современные и функциональные решения, подходящие для жизни и работы.</p>
+              <p>ООО «Велес Сталь» помогает предприятиям снабжаться металлопрокатом без лишних согласований и потери времени. Мы подбираем материал под задачу, проверяем документы и организуем поставку.</p>
+              <h2>НАШ ОПЫТ</h2>
+              <dl class="about-stats">
+                <div><dt>1000+</dt><dd>наименований</dd></div>
+                <div><dt>100%</dt><dd>проверка качества</dd></div>
+                <div><dt>24/7</dt><dd>на связи с клиентом</dd></div>
+                <div><dt>1 день</dt><dd>отгрузка со склада</dd></div>
+              </dl>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="about-why" aria-labelledby="about-why-title">
+      <section class="about-team" aria-labelledby="about-team-title">
         <div class="about-page__container">
-          <h2 id="about-why-title">Почему <em>клиенты</em> выбирают <em>нас</em></h2>
-
-          <div class="about-why__grid">
-            <article class="about-stat">
-              <img src="assets/icon-like.svg" alt="" />
-              <div>
-                <strong>1000</strong>
-                <p>Наименований металлопроката в наличии на собственных складах</p>
-              </div>
-            </article>
-
-            <article class="about-stat">
-              <img src="assets/icon-like.svg" alt="" />
-              <div>
-                <strong>100%</strong>
-                <p>Качество. Вся продукция проходит строгую проверку на соответствие ГОСТ и ТУ</p>
-              </div>
-            </article>
-
-            <article class="about-point">
-              <img src="assets/icon-like.svg" alt="" />
-              <p>Гибкие условия и индивидуальный подход. Мы ценим каждого клиента и готовы обсуждать персональные условия сотрудничества</p>
-            </article>
-
-            <article class="about-point">
-              <img src="assets/icon-like.svg" alt="" />
-              <p>Собственное производство полного цикла. Мы контролируем качество от заготовки до готового изделия</p>
-            </article>
+          <div class="about-team__heading">
+            <h2 id="about-team-title">КОМАНДА</h2>
+            <p>В «Велес Сталь» работают специалисты, которые понимают производство, логистику и реальные задачи снабжения. Мы говорим с клиентом на одном языке и отвечаем за результат на каждом этапе.</p>
+          </div>
+          <div class="team-grid">
+            <article class="team-card"><img src="assets/process-real.jpg" alt="Производственный цех" /><h3>Производство</h3><p>Подбираем решение под технические требования проекта.</p></article>
+            <article class="team-card"><img src="assets/hero-real.jpg" alt="Металлургическое производство" /><h3>Контроль качества</h3><p>Проверяем соответствие стандартам и сопроводительным документам.</p></article>
+            <article class="team-card"><img src="assets/laser.jpg" alt="Лазерная обработка металла" /><h3>Обработка</h3><p>Помогаем подготовить металл к дальнейшей работе.</p></article>
+            <article class="team-card"><img src="assets/warehouse.jpg" alt="Склад металлопроката" /><h3>Снабжение</h3><p>Организуем наличие, комплектацию и доставку заказа.</p></article>
           </div>
         </div>
       </section>
 
-      <section class="about-guarantees" aria-labelledby="about-guarantees-title">
+      <section class="about-values" aria-labelledby="about-values-title">
         <div class="about-page__container">
-          <h2 id="about-guarantees-title">Наши <em>гарантии</em></h2>
-
-          <div class="guarantees-grid">
-            <article class="guarantee-card">
-              <span class="guarantee-card__icon"><img src="assets/icon-own-production.svg" alt="" /></span>
-              <div>
-                <h3>Прозрачность</h3>
-                <p>В работе с нами нет скрытых комиссий и двойного дна, только честное и открытое партнерство</p>
-              </div>
-            </article>
-
-            <article class="guarantee-card">
-              <span class="guarantee-card__icon"><img src="assets/icon-wide-range.svg" alt="" /></span>
-              <div>
-                <h3>Квалифицированная консультация</h3>
-                <p>На всех этапах — от выбора марки стали до советов по обработке</p>
-              </div>
-            </article>
-
-            <article class="guarantee-card">
-              <span class="guarantee-card__icon"><img src="assets/icon-car.svg" alt="" /></span>
-              <div>
-                <h3>Оперативная доставка</h3>
-                <p>Соблюдение всех сроков доставки</p>
-              </div>
-            </article>
-
-            <article class="guarantee-card">
-              <span class="guarantee-card__icon"><img src="assets/icon-like.svg" alt="" /></span>
-              <div>
-                <h3>Гарантия качества</h3>
-                <p>100% соответствие продукции заявленным стандартам и сертификатам</p>
-              </div>
-            </article>
-
-            <article class="guarantee-card guarantee-card--wide">
-              <div>
-                <h3>Выбирайте ООО «Велес Сталь»</h3>
-                <p>Мы стремимся к долгосрочному и взаимовыгодному сотрудничеству. Наша цель — стать для вас основным поставщиком металлопроката, на которого можно положиться в любой ситуации.</p>
-              </div>
-            </article>
+          <h2 id="about-values-title">ПОЧЕМУ <em>НАС</em> ВЫБИРАЮТ</h2>
+          <div class="about-values__grid">
+            <article><strong>01</strong><h3>Прозрачно</h3><p>Фиксируем параметры заказа и заранее проговариваем условия поставки.</p></article>
+            <article><strong>02</strong><h3>Точно</h3><p>Подбираем марку, размер и стандарт под задачу, а не по шаблону.</p></article>
+            <article><strong>03</strong><h3>Вовремя</h3><p>Согласуем логистику и держим связь до получения продукции.</p></article>
           </div>
         </div>
       </section>
