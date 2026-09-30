@@ -7,9 +7,9 @@
     <meta name="description" content="Подготовьте запрос на расчёт металлопроката для компании Велес Сталь." />
     <title>Калькулятор металлопроката — Велес Сталь</title>
     <link rel="stylesheet" href="styles.css?v=8" />
-    <link rel="stylesheet" href="calculator.css?v=2" />
+    <link rel="stylesheet" href="calculator.css?v=3" />
     <script src="app.js?v=3" defer></script>
-    <script src="calculator.js?v=2" defer></script>
+    <script src="calculator.js?v=3" defer></script>
   </head>
   <body class="calculator-page">
     <a class="skip-link" href="#main">Перейти к содержимому</a>
@@ -54,7 +54,7 @@
             </label>
             <div class="calculator-form__columns">
               <label for="calc-type">Тип<input id="calc-type" name="type" value="508" maxlength="60" /></label>
-              <label for="calc-gost">Тип<input id="calc-gost" name="gost" value="ГОСТ 8706-78" maxlength="100" /></label>
+              <label for="calc-gost">ГОСТ<input id="calc-gost" name="gost" value="ГОСТ 8706-78" maxlength="100" /></label>
               <label class="calculator-measure" for="calc-tonnes"><span class="visually-hidden">Тонны</span><input id="calc-tonnes" name="tonnes" type="number" min="0" step="any" placeholder="0" /><span>Тонны</span></label>
               <label class="calculator-measure" for="calc-area"><span class="visually-hidden">Квадратные метры</span><input id="calc-area" name="area" type="number" min="0" step="any" placeholder="0" /><span>Кв. метры</span></label>
               <label class="calculator-measure" for="calc-quantity"><span class="visually-hidden">Количество штук</span><input id="calc-quantity" name="quantity" type="number" min="0" step="1" placeholder="0" /><span>Кол-во шт.</span></label>
@@ -62,10 +62,12 @@
               <label class="calculator-measure" for="calc-length"><span class="visually-hidden">Длина в метрах</span><input id="calc-length" name="length" type="number" min="0" step="any" placeholder="0" /><span>Длина, м</span></label>
             </div>
           </form>
-          <aside class="calculator-result" aria-label="Ориентировочная цена">
+          <aside class="calculator-result" aria-label="Ориентировочная цена" aria-live="polite">
             <div class="calculator-price">
               <p><span data-product-name>Лист ПВ 508</span></p>
-              <strong>от 45000 руб./т</strong>
+              <strong data-price-result>Цена уточняется</strong>
+              <p class="calculator-price__summary" data-calculation-summary>Укажите количество или размер заказа</p>
+              <p class="calculator-price__note" data-price-note>Прайс-лист не подключён: точную стоимость нельзя показать без подтверждённых цен.</p>
               <a href="#request">Обговорить цены</a>
             </div>
             <a class="calculator-gost-link" href="#request">ГОСТы и ТУ на “материал”</a>

@@ -115,6 +115,16 @@
   line-height: 1.2;
   font-weight: 700;
 }
+.calculator-price__summary,
+.calculator-price__note {
+  color: #777a8d !important;
+  font-size: 16px !important;
+  line-height: 1.35 !important;
+}
+.calculator-price__note {
+  padding-top: 14px;
+  border-top: 1px solid #dfe1e8;
+}
 .calculator-price a {
   color: #164da7;
   font-size: 18px;
