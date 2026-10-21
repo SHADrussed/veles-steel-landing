@@ -474,6 +474,20 @@ h1 {
   background-image: url("assets/product-black.png");
   transform: scaleX(-1);
 }
+@media (min-width: 561px) {
+  .product--black {
+    padding-bottom: 54px;
+  }
+  .product--black .product__visual {
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    margin-top: 24px;
+    flex-shrink: 0;
+  }
+}
 .product--pipes .product__visual {
   background-image: url("assets/product-pipes.png");
 }
@@ -797,6 +811,10 @@ h1 {
 }
 
 @media (min-width: 1101px) {
+  .navigation__home {
+    display: none;
+  }
+
   .container {
     width: min(1720px, calc(100% - 200px));
     max-width: none;

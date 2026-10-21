@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "tool": "tools/figma-qa",
+  "version": "0.1.0",
+  "scripts": {
+    "qa:visual": "node tools/figma-qa/cli.mjs run",
+    "qa:configure": "node tools/figma-qa/cli.mjs configure"
+  },
+  "hashes": {
+    "cli.mjs": "fe1823bb16638ca5593959c481823b9f3034ed8ded93c522a910a3644c4f03fd",
+    "runner.mjs": "46622123ce35f0930640313b47e748cabb1581e9eae30ff5d4e9175902259c1c",
+    "png.mjs": "fd1407913fdd3f5b1de114271f7537e528fbb67afcacc10a5cd24652e4282529",
+    "package.json": "ab4ccda37d81b52031be182e3110232d851c0a9ac6aaad0f2b0a77235a45e6fe",
+    "README.md": "fd6ef3f95ef368db5ab07009f48fd1dc78570d6122ab3261d507cf385a7769ec"
+  }
+}

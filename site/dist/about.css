@@ -196,6 +196,10 @@
 }
 
 @media (max-width: 700px) {
+  .about-hero h1 {
+    overflow-wrap: anywhere;
+  }
+
   .about-page__container {
     width: calc(100% - 32px);
   }

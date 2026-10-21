@@ -392,6 +392,10 @@
 }
 
 @media (max-width: 700px) {
+  .catalog-heading h1 {
+    overflow-wrap: anywhere;
+  }
+
   .catalog-product-view {
     margin-top: 40px;
   }
