@@ -1,0 +1,13 @@
+{
+  "name": "local-figma-qa-bridge",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.12" },
+  "bin": { "figma-qa": "cli.mjs" },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "test:browser": "node --test test/browser.integration.mjs"
+  },
+  "files": ["cli.mjs", "runner.mjs", "png.mjs", "README.md"]
+}

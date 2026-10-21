@@ -1,0 +1,3 @@
+# Preserve vendored release bytes: installer ownership hashes depend on them.
+tools/figma-qa/** -text
+tools/figma-design-downloader/** -text

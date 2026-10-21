@@ -1,0 +1,19 @@
+{
+  "name": "veles-steel-visual-qa",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "qa:serve": "node qa-server.mjs",
+    "qa:visual": "node tools/figma-qa/cli.mjs run",
+    "qa:configure": "node tools/figma-qa/cli.mjs configure",
+    "qa:cycle": "node tools/qa-cycle.mjs",
+    "qa:attempt": "node tools/qa-attempt.mjs",
+    "test": "node --test test/qa-attempt.test.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}
