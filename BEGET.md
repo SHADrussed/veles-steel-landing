@@ -30,7 +30,7 @@ python3 -m venv .venv
 
 ```sh
 GOOGLE_SERVICE_ACCOUNT_FILE=/srv/veles/private/service-account.json \
-  .venv/bin/python deploy/check_test_sheet.py \
+  /srv/veles/venv/bin/python deploy/check_test_sheet.py \
   --api-url https://TEST-DOMAIN --test-sheet-id TEST_SHEET_ID --confirm-test-write
 ```
 
