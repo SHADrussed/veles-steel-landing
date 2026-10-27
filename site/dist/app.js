@@ -42,19 +42,59 @@ if (form && status) {
   } catch {
     // The form still works when browser storage is unavailable.
   }
-  // This preview never transmits contact details or claims a submitted request.
-  form.addEventListener('submit', (event) => {
+  let sending = false;
+  let submitted = false;
+  form.addEventListener('submit', async (event) => {
     event.preventDefault();
-    if (!form.reportValidity()) return;
-    const digits = form.elements.namedItem('phone').value.replace(/\D/g, '');
-    if (digits.length < 10 || digits.length > 15) {
-      form.elements.namedItem('phone').setCustomValidity('Укажите номер телефона: от 10 до 15 цифр.');
-      form.elements.namedItem('phone').reportValidity();
-      return;
+    if (sending || submitted) return;
+    for (const name of ['name', 'phone', 'email', 'order']) {
+      const input = form.elements.namedItem(name);
+      input.value = input.value.trim();
     }
+    const phone = form.elements.namedItem('phone');
+    const digits = phone.value.replace(/\D/g, '');
+    phone.setCustomValidity(!/^\+?[0-9 ()-]+$/.test(phone.value) || digits.length < 10 || digits.length > 15
+      ? 'Укажите номер телефона: от 10 до 15 цифр.' : '');
+    if (!form.reportValidity()) return;
+    const button = form.querySelector('button[type="submit"]');
+    const label = button.textContent;
+    const payload = Object.fromEntries(['name', 'phone', 'email', 'order', 'note'].map(name => [name, form.elements.namedItem(name).value]));
+    payload.source = location.pathname.split('/').pop()?.replace('.html', '') || 'landing';
+    sending = true;
+    button.disabled = true;
+    button.textContent = 'Отправляем…';
+    form.setAttribute('aria-busy', 'true');
     status.hidden = false;
-    status.textContent = 'Форма заполнена. Это демонстрация вёрстки: заявка не отправлена, данные остаются только на этой странице.';
+    status.textContent = 'Отправляем заявку…';
+    try {
+      const response = await fetch('/api/leads', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(payload),
+        signal: AbortSignal.timeout(20000),
+      });
+      const result = await response.json();
+      if (!response.ok || result.ok !== true) throw new Error('Lead not acknowledged');
+      submitted = true;
+      status.textContent = 'Заявка принята. Мы свяжемся с вами.';
+    } catch {
+      status.textContent = 'Не удалось подтвердить приём заявки. Данные сохранены в форме. Попробуйте позже или свяжитесь с нами. При повторной отправке возможен дубль.';
+    } finally {
+      sending = false;
+      form.removeAttribute('aria-busy');
+      button.disabled = submitted;
+      button.textContent = submitted ? 'Заявка принята' : label;
+    }
   });
   form.elements.namedItem('phone').addEventListener('input', (event) => event.target.setCustomValidity(''));
-  form.addEventListener('input', () => { status.hidden = true; });
+  form.addEventListener('input', () => {
+    if (sending) return;
+    if (submitted) {
+      submitted = false;
+      const button = form.querySelector('button[type="submit"]');
+      button.disabled = false;
+      button.textContent = 'Отправить';
+    }
+    status.hidden = true;
+  });
 }

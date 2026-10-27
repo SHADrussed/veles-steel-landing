@@ -273,3 +273,6 @@
     margin-top: 72px;
   }
 }
+
+.calculator-price .calculator-price-note { font-size: 16px; line-height: 1.4; overflow-wrap: anywhere; }
+@media (max-width: 600px) { .calculator-price .calculator-price-note { font-size: 13px; } }

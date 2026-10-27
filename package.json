@@ -11,7 +11,7 @@
     "qa:configure": "node tools/figma-qa/cli.mjs configure",
     "qa:cycle": "node tools/qa-cycle.mjs",
     "qa:attempt": "node tools/qa-attempt.mjs",
-    "test": "node --test test/qa-attempt.test.mjs"
+    "test": "node --test test/*.test.mjs"
   },
   "devDependencies": {
     "playwright": "1.62.1"

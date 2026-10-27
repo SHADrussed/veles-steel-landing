@@ -1,0 +1,25 @@
+# Include in the existing HTTPS server block; preserve its certificate settings.
+# Define limit_req_zone $binary_remote_addr zone=veles_leads:10m rate=5r/m;
+# in nginx's http block before enabling the rate limit below.
+root /srv/veles/app/site/dist;
+index index.html;
+client_max_body_size 32k;
+
+location = /api/leads {
+    limit_req zone=veles_leads burst=5 nodelay;
+    limit_req_status 429;
+    proxy_pass http://127.0.0.1:8000;
+    proxy_set_header Host $host;
+    proxy_set_header X-Forwarded-Proto $scheme;
+    proxy_set_header X-Forwarded-For $remote_addr;
+    proxy_connect_timeout 5s;
+    proxy_read_timeout 25s;
+}
+location /api/ {
+    proxy_pass http://127.0.0.1:8000;
+    proxy_set_header Host $host;
+    proxy_set_header X-Forwarded-Proto $scheme;
+    proxy_set_header X-Forwarded-For $remote_addr;
+}
+location / { try_files $uri $uri/ =404; }
+location ~ /\. { deny all; }

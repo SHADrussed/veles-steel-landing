@@ -7,9 +7,9 @@
     <meta name="description" content="Подготовьте запрос на расчёт металлопроката для компании Велес Сталь." />
     <title>Калькулятор металлопроката — Велес Сталь</title>
     <link rel="stylesheet" href="styles.css?v=11" />
-    <link rel="stylesheet" href="calculator.css?v=4" />
-    <script src="app.js?v=3" defer></script>
-    <script src="calculator.js?v=4" defer></script>
+    <link rel="stylesheet" href="calculator.css?v=20" />
+    <script src="app.js?v=5" defer></script>
+    <script type="module" src="calculator.js?v=5"></script>
   </head>
   <body class="calculator-page">
     <a class="skip-link" href="#main">Перейти к содержимому</a>
@@ -66,7 +66,8 @@
           <aside class="calculator-result" aria-label="Ориентировочная цена">
             <div class="calculator-price">
               <p><span data-product-name>Лист ПВ 508</span></p>
-              <strong>от 45000 руб./т</strong>
+              <strong data-price-result>Цена уточняется</strong>
+              <p class="calculator-price-note" data-price-note>Для расчёта стоимости нужен подтверждённый прайс. Отправьте параметры заказа.</p>
               <a href="#request">Обговорить цены</a>
             </div>
             <a class="calculator-gost-link" data-material-link href="material.html">ГОСТы и ТУ на “материал”</a>
@@ -86,12 +87,12 @@
             </div>
           </div>
           <form id="request-form" class="request-form">
-            <label for="name">Фамилия Имя<input id="name" name="name" autocomplete="name" placeholder="Иванов Иван" required maxlength="100" /></label>
+            <label for="name">Фамилия Имя<input id="name" name="name" minlength="2" autocomplete="name" placeholder="Иванов Иван" required maxlength="100" /></label>
             <label for="phone">Номер телефона<input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+7 999 999 99 99" required minlength="10" maxlength="30" /></label>
             <label for="email">Почта<input id="email" name="email" type="email" autocomplete="email" placeholder="writeyourmail@gmail.com" required maxlength="160" /></label>
             <label for="order">Заказ<input id="order" name="order" placeholder="Напишите ваш заказ" required maxlength="500" /></label>
             <label for="note">Примечание<textarea id="note" name="note" rows="3" placeholder="Примечание к заказу" maxlength="2000"></textarea></label>
-            <p class="form-note">Демонстрационная форма. Данные не отправляются.</p>
+            <p class="form-note">Отправляя заявку, вы передаёте указанные данные для обработки вашего обращения.</p>
             <button class="button" type="submit">Отправить</button>
             <p id="form-status" class="form-status" role="status" aria-live="polite" hidden></p>
           </form>

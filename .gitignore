@@ -23,3 +23,10 @@ ChatExport*/
 credentials*.json
 *service-account*.json
 debug.log
+
+# Python runtime and local test data
+__pycache__/
+.pytest_cache/
+.venv/
+*.pyc
+!.env.example
