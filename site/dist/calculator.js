@@ -1,3 +1,4 @@
+import {quote} from './price-policy.js';
 'use strict';
 
 const calculator = document.querySelector('#calculator-form');
@@ -10,6 +11,15 @@ if (calculator && order) {
   function update() {
     const product = calculator.elements.namedItem('product').value.trim();
     const type = calculator.elements.namedItem('type').value.trim();
+    const parameters = Object.fromEntries(new FormData(calculator));
+    const result = quote(parameters);
+    document.querySelector('[data-price-result]').textContent = result
+      ? `${new Intl.NumberFormat('ru-RU', {maximumFractionDigits:2}).format(result.total)} ₽`
+      : 'Цена уточняется';
+    document.querySelector('[data-price-note]').textContent = result
+      ? `Тариф: ${result.unitPrice} ₽/${result.unit}`
+      : 'Для расчёта стоимости нужен подтверждённый прайс. Отправьте параметры заказа.';
+
     document.querySelector('[data-product-name]').textContent = [product, type].filter(Boolean).join(' ') || 'Материал';
 
     if (materialLink) {

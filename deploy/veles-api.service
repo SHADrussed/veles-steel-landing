@@ -1,0 +1,20 @@
+[Unit]
+Description=Veles Steel FastAPI
+After=network.target
+
+[Service]
+User=veles
+Group=veles
+WorkingDirectory=/srv/veles/app
+EnvironmentFile=/srv/veles/private/api.env
+ExecStart=/srv/veles/venv/bin/uvicorn api.main:app --host 127.0.0.1 --port 8000 --workers 1 --proxy-headers --forwarded-allow-ips=127.0.0.1 --no-access-log
+Restart=on-failure
+RestartSec=5
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+
+[Install]
+WantedBy=multi-user.target

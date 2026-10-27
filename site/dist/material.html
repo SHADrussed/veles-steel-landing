@@ -11,7 +11,7 @@
     <title>ГОСТы и ТУ — Велес Сталь</title>
     <link rel="stylesheet" href="styles.css?v=11" />
     <link rel="stylesheet" href="material.css?v=5" />
-    <script src="app.js?v=3" defer></script>
+    <script src="app.js?v=5" defer></script>
     <script src="material.js?v=3" defer></script>
   </head>
   <body class="material-page">
@@ -144,7 +144,7 @@
           </div>
 
           <form id="request-form" class="request-form">
-            <label for="name">Фамилия Имя<input id="name" name="name" autocomplete="name" placeholder="Иванов Иван" required maxlength="100" /></label>
+            <label for="name">Фамилия Имя<input id="name" name="name" minlength="2" autocomplete="name" placeholder="Иванов Иван" required maxlength="100" /></label>
             <label for="phone">Номер телефона<input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+7 999 999 99 99" required minlength="10" maxlength="30" /></label>
             <label for="email">Почта<input id="email" name="email" type="email" autocomplete="email" placeholder="writeyourmail@gmail.com" required maxlength="160" /></label>
             <label for="order">Заказ<input id="order" name="order" placeholder="Напишите ваш заказ" required maxlength="500" /></label>

@@ -57,10 +57,13 @@ if(mode==='responsive'){
  await check('catalog category and history',async page=>{
   await goto(page,'/catalog.html');await page.locator('.catalog-tab[href*="black"]').click();assert.ok(page.url().includes('category=black'));assert.ok((await page.locator('[data-catalog-title]').textContent()).replaceAll('ё','е').includes('Черный'));await page.goBack();assert.ok((await page.locator('[data-catalog-title]').textContent()).includes('Цветной'));
  });
- await check('demo form validation and no network submission',async page=>{
-  await goto(page,'/');const sent=[];page.on('request',r=>{if(r.method()!=='GET')sent.push(r.method());});
+ await check('form validates and submits acknowledged API response',async page=>{
+  await goto(page,'/');const sent=[];
+  await page.route('**/api/leads',async route=>{sent.push(route.request().postDataJSON());await route.fulfill({json:{ok:true}});});
   await page.locator('#request-form button[type=submit]').click();assert.equal(await page.locator('#form-status').isVisible(),false);
-  await page.locator('#name').fill('QA Test');await page.locator('#phone').fill('+7 999 123 45 67');await page.locator('#email').fill('qa@example.invalid');await page.locator('#order').fill('QA local test');await page.locator('#request-form button[type=submit]').click();assert.equal(await page.locator('#form-status').isVisible(),true);assert.ok((await page.locator('#form-status').textContent()).includes('не отправлена'));assert.deepEqual(sent,[]);
+  await page.locator('#name').fill('QA Test');await page.locator('#phone').fill('+7 999 123 45 67');await page.locator('#email').fill('qa@example.invalid');await page.locator('#order').fill('QA local test');await page.locator('#request-form button[type=submit]').click();
+  await page.waitForFunction(()=>document.querySelector('#form-status').textContent.includes('Заявка принята'));
+  assert.equal(sent.length,1);assert.equal(sent[0].order,'QA local test');
  });
  await check('catalog: steel classification and category destinations',async page=>{
   await goto(page,'/catalog.html?category=nonferrous');assert.doesNotMatch(await page.locator('[data-catalog-cards]').textContent(),/Нержавеющие|Коррозионные|Инструментальные/);
